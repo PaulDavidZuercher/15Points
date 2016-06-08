@@ -1,0 +1,11 @@
+Datenbank Strukturen:
+user(userName,passWord, accountCreation)
+savedLoginData(userName, loginDataName, passWord, dataCreation)
+
+Seitenstrukturen:
+login.php
+loginProc.php
+register.php
+registerProc.php
+overView.php
+overViewProc.php
