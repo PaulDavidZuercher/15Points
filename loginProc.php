@@ -14,7 +14,15 @@
         //user exists 
         $_SESSION["login"] = true;
         $_SESSION["userName"] = $_POST["userName"]; //todo find more safe version :)
+        
+        echo("<script type=\"javascript\"> window.location = \"/index.php\"; </script>" )
+        exit();
+        
       }
+      
+      echo("<p> invalid Username/Password Combination </p>");
+      
     }
+    
   }
 ?>
