@@ -3,7 +3,7 @@
   
   	<head>
 		  <title>Login</title>
-		  <link rel="stylesheet" type="text/css" href="login_formate.css">
+		  <link rel="stylesheet" type="text/css" href="formate.css">
 		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   	</head>
 
