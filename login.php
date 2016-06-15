@@ -1,16 +1,25 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  </head>
+  
+  	<head>
+		  <title>Login</title>
+		  <link rel="stylesheet" type="text/css" href="login_formate.css">
+		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	</head>
+
   <body>
-    <form action="loginProc.php">
-      Username:<br>
-      <input type="text" name="uid">
-      <br>
-      Password:<br>
-      <input type="password" name="psw">
-    </form>
-
-
-</body>
+		<div class="center">
+		<h1>Einlogen</h1>
+   		<form action="loginProc.php">
+      		Username:<br>
+      		<input type="text" name="uid">
+      		<br>
+      		Password:<br>
+      		<input type="password" name="psw">
+		</form>
+		<a href="sign_in.php">Noch nicht registriert?</a>
+		</div>
+ </body>
+ 
 </html>
+
