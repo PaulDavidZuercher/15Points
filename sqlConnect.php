@@ -1,1 +1,1 @@
-$conn = new mysqli("localhost", "user", "password", "database");
+$conn = new mysqli("localhost", "root", "rabadons0p", "PSWdatabase");
