@@ -2,6 +2,8 @@
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type = "text/javascript">
+  </head>
+  <body>
       function checkUserPass()
       {
         $.ajax({
@@ -10,7 +12,6 @@
           data: {userName: $("#userName").val, passWord: $('passWord').val},
           success:function(result){('#output').val(result)}
       });
-        
       }
     </script>
     <div>
@@ -25,6 +26,5 @@
         </div>
       </form>
     </div>
-
   </body>
 </html>
