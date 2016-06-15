@@ -17,6 +17,7 @@
     </script>
   </head>
   <body>
+    <div id="output"style="width:100px;height:20px">
     <form>
       Username:<br>
       <input type="text" name="userName"  id="userName">
@@ -24,7 +25,7 @@
       Password:<br>
       <input type="password" name="passWord" id="passWord">
       
-      <div id="output"style="width:100px;height:20px">
+      
       </div>
       
       <button href="#" onclick="checkUserPass();return false;">Login</button>
