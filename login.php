@@ -17,7 +17,7 @@
       		Password:<br>
       		<input type="password" name="psw">
 		</form>
-		<a href="sign_in.php">Noch nicht registriert?</a>
+		<a href="register.php">Noch nicht registriert?</a>
 		</div>
  </body>
  
