@@ -19,19 +19,20 @@
     </script>
   </head>
   <body>
-    <div id="output"style="width:100px;height:20px">
-    <form>
+    <h1>Login</h1>
+    
+<div class="center"style="width:100px;height:20px">
+
+     <form>
       Username:<br>
       <input type="text" name="userName"  id="userName">
       <br>
       Password:<br>
       <input type="password" name="passWord" id="passWord">
-      
-      
-      </div>
-      
+      </form>
+      <br>
       <a href="#" onclick="checkUserPass();return false;">Login</a>
-    </form>
+    </div>
 
 
 </body>
