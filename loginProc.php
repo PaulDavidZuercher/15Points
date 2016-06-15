@@ -15,7 +15,7 @@
         $_SESSION["login"] = true;
         $_SESSION["userName"] = $_POST["userName"]; //todo find more safe version :)
         
-        echo("<script type=\"javascript\"> window.location = \"/index.php\"; </script>" )
+        echo("<script type=\"text/javascript\"> window.location = \"/index.php\"; </script>" )
         exit();
         
       }
