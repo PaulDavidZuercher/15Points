@@ -29,9 +29,20 @@ a:hover, a:active {
     background-color: green;
 }
 
-div {
+.horizontalAndVerticalCentered{
+  width: 200px;
+  height: 400px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px -100px 0px 0px;
+}
+
+#pwDiv{
   float: left;
-  width: 225px;
+  background: rgba(0,0,0,0.8);
   border: 3px solid #73AD21;
   padding: 10px;
 }
