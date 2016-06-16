@@ -21,9 +21,8 @@
         Password:
         <br>
         <input type="password" name="passWord" id="passWord">
-        <button href="#" onclick="checkUserPass();return false;">Login</button>
-        <div id="output"style="width:100px;height:20px">
-        </div>
+        <br> <br>
+        <a href="#" onclick="checkUserPass();return false;">Login</a>
       </form>
     </div>
   </body>
