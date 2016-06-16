@@ -41,7 +41,6 @@ a:hover, a:active {
 }
 
 #pwDiv{
-  float: left;
   background:rgba(255,255,255, 0.8);;
   border: 3px solid #73AD21;
   padding: 10px;
