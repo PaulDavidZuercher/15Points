@@ -14,7 +14,7 @@
     </script>
   </head>
   <body>
-    <div id="pwDiv">
+    <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
         <input type="text" name="userName"  id="userName">
