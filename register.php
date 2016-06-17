@@ -10,7 +10,18 @@
 		<h1>Registrieren</h1>
 
 		<div class="center">
-
+			<form action="registerProc.php">
+	      		Username:<br>
+		      	<input type="text" name="uid">
+		      	<br>
+		      	E-Mailadresse:<br>
+		      	<input type="text" name="ema">
+		      	<br>
+      			Password:<br>
+     		 	<input type="password" name="psw">
+     		 	Password bestätigen: <br>
+     		 	<input type="password" name="psw2">
+    		</form>
 
 		</div>
 	</body>
