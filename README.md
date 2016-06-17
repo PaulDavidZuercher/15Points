@@ -1,13 +1,13 @@
 # Todos:
 
-[ ] Datenbank Strukturen:
+- [ ] Datenbank Strukturen:
   - [ ] user(userName,passWord, E-MailAdresse, accountCreation)
   - [ ] savedLoginData(userName, loginDataName, passWord, dataCreation)
   
-[ ] Seitenstrukturen:
-  - [ ] login.php
-    - [ ] Ajax
-    - [ ] Front-End
+- [ ] Seitenstrukturen:
+  - [x] login.php
+    - [x] Ajax
+    - [x] Front-End
   - [ ] loginProc.php
   - [ ] register.php
     - [ ] Ajax
