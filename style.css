@@ -26,7 +26,7 @@ a:link, a:visited {
 
 
 a:hover, a:active {
-    background-color: blue;
+    background-color: CornflowerBlue;
 }
 
 .horizontalAndVerticalCentered{
@@ -43,7 +43,7 @@ a:hover, a:active {
 
 #pwDiv{
   background:rgba(255,255,255, 0.8);;
-  border: 3px solid #73AD21;
+  border: 3px solid DeepSkyBlue;
   padding: 10px;
 }
 
