@@ -1,13 +1,14 @@
 <html>
 
 <?php 
-  include('connect.php'); 
-  // Einbinden der Datei 'connect.php'
+  include('connect.php');
 ?>
 
 <head>
 <title>Overview</title>
 </head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
 		function proceed(){
