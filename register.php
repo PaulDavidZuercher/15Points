@@ -19,7 +19,8 @@
 		      	<br>
       			Password:<br>
      		 	<input type="password" name="psw">
-     		 	Password bestätigen: <br>
+     		 	<br>
+     		 	Password bestaetigen: <br>
      		 	<input type="password" name="psw2">
     		</form>
 
