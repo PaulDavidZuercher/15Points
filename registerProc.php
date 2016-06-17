@@ -19,7 +19,7 @@ while($row = mysqli_fetsch_object($ergebnis))
 {
  
 if ($ergebnis = $userName) {
-	echo "<p>Username existiert bereits</p> 
+	echo "<p>Username existiert bereits</p>" 
 	exit();
 
 }
