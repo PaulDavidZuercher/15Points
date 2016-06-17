@@ -1,5 +1,5 @@
 Datenbank Strukturen:
-user(userName,passWord, accountCreation)
+user(userName,passWord, E-MailAdresse, accountCreation)
 savedLoginData(userName, loginDataName, passWord, dataCreation)
 
 Seitenstrukturen:
