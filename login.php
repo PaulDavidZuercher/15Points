@@ -33,7 +33,8 @@
         <br>
         <input type="password" name="passWord" id="passWord">
         <br> <br>
-        <a id="btnUserInfo" href="#" onclick="checkUserPass();return false;">Login</a>
+        <button id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</button>
+        <button class="buttonBlue" href="register.php">Register</button>
         <div id="output" style="width:200px;30px">
         </div>
       </form>
