@@ -7,8 +7,10 @@
 	</head>
 
 	<body>
+		<div class="horizontalAndVerticalCentered">
 		<h1>Registrieren</h1>
-
+		</div>
+		
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 			<form action="registerProc.php">
 	      		Username:<br>
