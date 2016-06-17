@@ -9,7 +9,7 @@
 	<body>
 		<h1>Registrieren</h1>
 
-		<div class="center">
+		<div id="pwDiv" class="horizontalAndVerticalCentered">
 			<form action="registerProc.php">
 	      		Username:<br>
 		      	<input type="text" name="uid">
