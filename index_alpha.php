@@ -1,7 +1,7 @@
 <html>
 
 <?php 
-  include('connect.php');
+  include('sqlConnect.php');
 ?>
 
 <head>
@@ -21,7 +21,7 @@
 		}
 
 <body>
-<h2>Passwort Manager</h2>
+<h2>Password Manager</h2>
 
 <h3>Your passwords</h3>
 
