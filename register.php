@@ -23,7 +23,7 @@
      		 	Password bestaetigen: <br>
      		 	<input type="password" name="psw2">
     		</form>
-
+		<a id="btnUserInfo" href="#" onclick="checkUserPass();return false;">Register</a>
 		</div>
 	</body>
 </html>
