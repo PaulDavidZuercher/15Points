@@ -50,3 +50,31 @@ a:hover, a:active {
 body {
     background-image: url("http://wallpoper.com/images/00/30/98/09/safe-easiest_00309809.jpg");
 }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: border: 1px solid blue;;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: left;
+}
+
+.buttonBlue {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+}
+
+.buttonBlue:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
