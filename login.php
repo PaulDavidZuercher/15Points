@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
+    
       function checkUserPass(){
         $.ajax({
           type: "POST",
@@ -11,6 +12,15 @@
           success:function(result){$('#output').val(result)}
       });
       }
+      
+      $(document).ready(
+        $("#btnUserInfo").click(
+          function(e){
+            e.preventDefault();
+            CheckUserPass();
+            return false;
+          });
+      
     </script>
   </head>
   <body>
@@ -23,7 +33,7 @@
         <br>
         <input type="password" name="passWord" id="passWord">
         <br> <br>
-        <a href="#" onclick="checkUserPass();return false;">Login</a>
+        <a id="btnUserInfo" href="#" onclick="checkUserPass();return false;">Login</a>
         <div id="output" style="width:200px;30px">
         </div>
       </form>
