@@ -5,7 +5,7 @@
   if(!empty($_POST)
   {
     $userName = $_POST["userName"];
-    $mysqli->prepare("Select * from user where username = ? && passWord = ?");
+    $mysqli->prepare("Select * from user where userName = ? && passWord = ?");
     $mysqli->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
     if($res = $conn->execute())
     {
