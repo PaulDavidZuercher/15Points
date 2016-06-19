@@ -1,28 +1,28 @@
-<?php 
-include 'sqlConnect.php'
 
-$userName = $_POST["uid"]
-$ema = $_POST["ema"]
-$passWord = $_POST["psw"] 
-$passWord2 = $_POST["psw2"]
+
+<?php 
+// todo: prevent sql injection
+
+include 'sqlConnect.php';
+
+$userName = $_POST["uid"];
+$ema = $_POST["ema"];
+$passWord = $_POST["psw"];
+//$passWord2 = $_POST["psw2"]; s. z. 10ff
 $accountCreation = time()
 
+// do it in  register.php because of better feedback
+//if($passWord != $passWord2) {
+//	echo "<p>Password unterschiedlich. Bitte erneut eingeben.</p>"
+//	exit();
+//}
 
-if($passWord != $passWord2) {
-	
-	echo "<p>Password unterschiedlich. Bitte erneut eingeben.</p>"
-	exit();
-}
-
-$ergebnis = mysqli_query($conn, "SELECT userName FROM user")
-while($row = mysqli_fetsch_object($ergebnis))
+$ergebnis = $mysqli->query("SELECT userName FROM user where userName = '$userName' && passWord = '$passWord'");
+if($ergebnis->fetch_row())
 {
- 
-if ($ergebnis = $userName) {
 	echo "<p>Username existiert bereits</p>" 
 	exit();
+}
 
-}
-}
-$eintrag = mysqli_query($conn, "INSERT INTO user (userName, passWord, E-MailAdresse, accountCreation) VALUES ('$userName', '$ema', '$passWord', '$accountCreation')") 
+$mysqli->query("INSERT INTO user (userName, passWord, E-MailAdresse, accountCreation) VALUES ('$userName', '$ema', '$passWord', '$accountCreation')") 
 ?>
