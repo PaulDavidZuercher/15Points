@@ -19,7 +19,7 @@
   - [ ] overViewProc.php
   - 
   - myCrypto.php
-    String decrypt(txt, PrK)
+    String decrypt(txt, PrK) \n
     String encrypt(txt, PuK)
   
 # Server Data
