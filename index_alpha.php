@@ -11,34 +11,28 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function loadDoc(){
+		function addLoginData(){
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php",
-				data: {loginDataName: $("#account").val, passWord: $('#password').val},
+				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1 ,
 				
 			})
-				
+		}
+		function addLoginData(){
+			$.ajax({
+				type: "POST",
+				url: "/indexProc.php",
+				data: {SetorGet: 2},
+				success: function(result){$("#passwordView").html = result}
+			})
 		}
 <body>
 <h2>Password Manager</h2>
 <h3>Your passwords</h3>
 	
-	<?php
-		$mysqli->prepare("SELECT * FROM savedLoginData SLD, user U WHERE U.userName = SLD.userName AND U.userName = ?");
-		$mysqli->bind_param("s", $_POST["userName"])
-		$res = mysqli_query($mysqli); 		
-		
-		echo "<table>";
-		while($row = mysqli_fetch_object($res))
-			{
-			echo "<tr>";
-			echo "<td>",$row->,"</td>";
-			echo "<td>",$row->urlname,"</td>";
-			echo "</tr>";
-		}
-		echo "</table>";
-	?>
+	<div id="passwordView" style="width:400px;height:200px;">
+	</div>
 	
 	
 	<h4>Add data</h4>
