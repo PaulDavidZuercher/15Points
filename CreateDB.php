@@ -4,7 +4,7 @@ $username = "root";
 $password = "rabadon0p";
 
 // Create connection
-$conn = mysqli_connect($localhost, $root, $rabadon0p);
+$conn = mysqli_connect($localhost, $username, $password);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
