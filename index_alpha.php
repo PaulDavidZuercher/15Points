@@ -14,8 +14,9 @@
 		function loadDoc(){
 			$.ajax({
 				type: "POST",
-				url: "/overViewProc.php",
-				data: 
+				url: "/indexProc.php",
+				data: {loginDataName: $("#account").val, passWord: $('#password').val},
+				
 			})
 				
 		}
@@ -37,23 +38,18 @@
 			echo "</tr>";
 		}
 		echo "</table>";
-?>
-		
 	?>
 	
 	
-	<h4>Add data</h4> <!--Formular um neue Daten hinzuzufügen-->
+	<h4>Add data</h4>
 	
-    <form action="index.php" method="post"> <!--neue php oder mit ajax aktualisieren?!-->
-        <p>please add password data <br>
-          <p><input name="account" type="text" maxlength="30"><br>account name</p>
-		  <p><input name="username" type="text"><br>username</p>
-		  <p><input name="password" type="text"><br>password</p>
-		  <p><input name="notes" type="text"><br>notes</p>
-        </p>
-        /*<input type="submit" name="Tagknopf" value="ADD"> --> */
-	<button type="button" onclick="loadDoc()">ADD</button><!--sollte dann oben in der Tabelle neue Daten anzeigen -->
-    </form> 
+		<form>
+    		<p>please add password data <br>
+         	<p><input name="account" type="text" maxlength="30"><br>account name</p>
+		<p><input name="password" type="text"><br>password</p>
+		 /*<input type="submit" name="Tagknopf" value="ADD"> --> */
+		<button type="button" onclick="loadDoc()">ADD</button>
+    		</form> 
   
 </body> 
 </html>
