@@ -20,6 +20,7 @@ a:link, a:visited {
     color: white;
     border: 2px solid #008CBA;
     font-size: 8px;
+
 }
 
 
@@ -28,6 +29,7 @@ a:hover, a:active {
     color: black; 
     border: 2px solid #008CBA;
     font-size: 8px;
+    margin: 4px 2px;
 }
 
 .horizontalAndVerticalCentered{
