@@ -3,23 +3,19 @@ $servername = "localhost";
 $username = "jan";
 $password = "paul";
 
-// Create connection
-$conn = mysqli_connect($localhost, $username, $password);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include connect.php
 
 // Create database
-$sql = "CREATE DATABASE 15PointsDB";
-if (mysqli_query($conn, $sql)) {
-    echo "Database created successfully";
+$query =  "CREATE DATABASE 15PointsDB";
+$mysqli->query($query);
+if ($mysqli->connect_errno) {
+    echo "Database 15PointsDB created successfully";
 } else {
-    echo "Error creating database: " . mysqli_error($conn);
+    echo "Error creating database: " . $mysqli->connect_error;
 }
 
 // sql to create table
-$sql = "CREATE TABLE user (
+$query = "CREATE TABLE user (
 userName VARCHAR(50) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 passWord VARCHAR(50) NOT NULL,
 MailAdresse VARCHAR(50),
@@ -27,12 +23,12 @@ accountCreation TIMESTAMP,
 FOREIGN KEY (userName) REFERENCES savedLoginData(userName)
 )";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Table created successfully";
+$mysqli->query($query);
+if ($mysqli->connect_errno) {
+    echo "Database Table created successfully";
 } else {
-    echo "Error creating table: " . $conn->error;
+    echo "Error creating database: " . $mysqli->connect_error;
 }
-
 // sql to create table
 $sql = "CREATE TABLE savedLoginData (
 userName VARCHAR(50) NOT NULL AUTO_INCREMENT PRIMARY KEY,
