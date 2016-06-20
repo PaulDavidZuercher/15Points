@@ -4,7 +4,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
     
-      function checkUserPass(){
+      function checkUserPass(){ //
         $.ajax({
           type: "POST",
           url: "/loginProc.php",
@@ -13,7 +13,7 @@
       });
       }
       
-      $(document).ready(
+      $(document).ready( //
         $("#btnUserInfo").click(
           function(e){
             e.preventDefault();
@@ -24,7 +24,7 @@
     </script>
   </head>
   <body>
-    <div id="pwDiv" class="horizontalAndVerticalCentered">
+    <div id="pwDiv" class="horizontalAndVerticalCentered">  //login dif --> Eingabefelder für userName und passWord
       <form>
         Username:<br>
         <input type="text" name="userName"  id="userName">
@@ -33,7 +33,7 @@
         <br>
         <input type="password" name="passWord" id="passWord">
         <br> <br>
-        <button id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</button>
+        <button id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</button> //button startet checkUserPass funktion
         <a class="buttonBlue" href="register.php">Register</a>
         <div id="output" style="width:200px;30px">
         </div>
