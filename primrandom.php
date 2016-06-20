@@ -1,5 +1,5 @@
 <?php
-$zufallszahl = rand(1000000,9000000);
+$zufallszahl = rand(2,1000);
 $i = $zufallszahl-1;
 $primtest = false;
 //echo "erster Zufall: " . $zufallszahl . "\n";
@@ -18,7 +18,7 @@ while($primtest==false){
             $i = $i-1;
         }
         if(($zufallszahl % $i)==0 AND $i != 1){
-            $zufallszahl = rand(1000000,9000000);
+            $zufallszahl = rand(2,1000);
             $i = $zufallszahl -1;
             break;
             
@@ -29,7 +29,7 @@ while($primtest==false){
 
 
 
-$zufallszahl2 = rand(1000000,9000000);
+$zufallszahl2 = rand(2,1000);
 $i2 = $zufallszahl2-1;
 $primtest2 = false;
 //echo "zweiter Zufall: " . $zufallszahl2 . "\n";
@@ -48,7 +48,7 @@ while($primtest2==false){
             $i2 = $i2-1;
         }
         if(($zufallszahl2 % $i2)==0 AND $i2 != 1){
-            $zufallszahl2 = rand(1000000,9000000);
+            $zufallszahl2 = rand(2,1000);
             $i2 = $zufallszahl2 -1;
             break;
             
@@ -58,6 +58,13 @@ while($primtest2==false){
 }
 
 $n = $p*$q;
-echo "n : " . $n;
+echo "n : " . $n . "\n";
+
+
+$phi = ($p-1)*($q-1);
+echo "phi: " . $phi;
+
+
+
 
 ?>
