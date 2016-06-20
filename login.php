@@ -36,8 +36,7 @@
         <br>
         <input type="password" name="passWord" id="passWord">
         <br> <br>
-        //button startet checkUserPass funktion
-        <button id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</button> //button startet checkUserPass funktion
+        <button id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</button> 
         <a class="buttonBlue" href="register.php">Register</a>
         <div id="output" style="width:200px;30px">
         </div>
