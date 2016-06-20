@@ -27,4 +27,9 @@
 		<a id="btnUserInfo" href="#" onclick="checkUserPass();return false;">Register</a>
 		</div>
 	</body>
+	<?php 
+	if($psw != $psw2) {
+	echo "<p>Password unterschiedlich. Bitte erneut eingeben.</p>"
+	exit();
+	?>
 </html>
