@@ -24,5 +24,6 @@
   
 # Server Data
 ip: 144.76.65.253
-username: root
+username: paul
 password: rabadons0p
+databasename: 15PointsDB
