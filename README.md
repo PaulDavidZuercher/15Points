@@ -1,8 +1,8 @@
 # Todos:
 
 - [ ] Datenbank Strukturen:
-  - [ ] user(userName,passWord, E-MailAdresse, accountCreation)
-  - [ ] savedLoginData(userName, loginDataName, passWord, dataCreation)
+  - [ ] user(userName,passWord, email, reg_date)
+  - [ ] savedLoginData(userName, loginDataName, passWord, cre_date)
   
 - [ ] Seitenstrukturen:
   - [x] login.php
