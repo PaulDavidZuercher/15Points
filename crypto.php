@@ -1,7 +1,7 @@
 <?php
 echo ("working");
 generateRandomprimeNumbers();
-
+echo ("finished")
 
 function generateRandomprimeNumbers()
 {
