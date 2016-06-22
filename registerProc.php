@@ -4,10 +4,10 @@
 include 'sqlConnect.php';
 
 $userName = $_POST["uid"];
-$ema = $_POST["ema"];
+$email = $_POST["ema"];
 $passWord = $_POST["psw"];
 //$passWord2 = $_POST["psw2"]; s. z. 10ff
-$accountCreation = new DateTime('now', new DateTimeZone('EUROPE'));
+$reg_date = new DateTime('now', new DateTimeZone('EUROPE'));
 
 // do it in  register.php because of better feedback
 //if($passWord != $passWord2) {
@@ -22,5 +22,5 @@ if($ergebnis->fetch_row())
 	exit();
 }
 
-$mysqli->query("INSERT INTO user (userName, passWord, E-MailAdresse, accountCreation) VALUES ('$userName', '$ema', '$passWord', '$accountCreation')") 
+$mysqli->query("INSERT INTO user (userName, passWord, email, reg_date) VALUES ('$userName', '$email', '$passWord', '$reg_date')") 
 ?>
