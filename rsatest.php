@@ -66,7 +66,7 @@ echo "phi: " . $phi;
 
 while(1==1){
     $primarray = array(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97);
-    $index = rand(0,count($primarray));
+    $index = rand(0,count($primarray)-1);
     $eteiler = $primarray[$index];
 
     if($phi % $eteiler == 0){
