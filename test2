@@ -60,7 +60,7 @@ $n = $p * $q;
 $phiOfN = ($p−1)*($q−1);
 hilfszahl = 2;
 
-while ($phiOfN % $hilfszahl == 0 )
+while ($phiOfN % $hilfszahl == 0 ) {
 $hilfszahl = rand(3,1000);
 $i = $hilfszahl-1;
 $primtest = false;
@@ -89,7 +89,7 @@ while($primtest==false){
     
 }
 
-
+}
 
  
  
