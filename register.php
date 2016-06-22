@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>log in</title>
+		<title>register</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -10,7 +10,7 @@
   			$.ajax({
 				type: "POST",
 				rul:"/registerProc.php",
-				data {userName: $("#userName").val, E-MailAdresse: $('#E-MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
+				data {userName: $("#userName").val, E-MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
 				success:function(result){$('#output').html(result)}
 			})	
 		}
