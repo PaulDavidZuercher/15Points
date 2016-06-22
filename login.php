@@ -26,6 +26,13 @@
     </script>
   </head>
   <body>
+    
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a class="active"  href="login.php">Login</a></li>
+      <li><a href="register.php">Register</a></li>
+    </ul>
+    
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
