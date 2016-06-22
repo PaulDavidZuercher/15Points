@@ -6,7 +6,7 @@
         die("<html> <head> <title> Error 1234 </title> </head><body> <h1> Please Login first </h1> </body> </html>");
     }
     
-    $dataCreation = new DateTime('now', new DateTimeZone('EUROPE'));
+    $cre_date = new DateTime('now', new DateTimeZone('EUROPE'));
     $SetorGet = $_POST["SetorGet"]
     if($_POST["userName"] == )
     {
@@ -17,8 +17,8 @@
 	{
 		case 1:
             
-			$stmt = $mysqli->prepare("INSERT INTO savedLoginData (userName, loginDataName, passWord, dataCreation) VALUES ('?', '?', '?', '?')");
-			$stmt->bind_param("ssss",$_SESSION["userName"], $_POST["loginDataName"], $_POST["passWord"], $dataCreation);
+			$stmt = $mysqli->prepare("INSERT INTO savedLoginData (userName, loginDataName, passWord, cre_date) VALUES ('?', '?', '?', '?')");
+			$stmt->bind_param("ssss",$_SESSION["userName"], $_POST["loginDataName"], $_POST["passWord"], $cre_date);
 			if(!$stmt->execute())
 			{
 				die("Insertion of Data failed:". $mysqli->error);
@@ -39,7 +39,7 @@
 				echo ("<td>" . $row["loginDataName"] . "</td>");
 				echo ("<td>" . $row["userName"] . "</td>");
 				echo ("<td>" . $row["passWord"]  . "</td>");
-				echo ("<td>" . $row["dataCreation"] . "</td>");
+				echo ("<td>" . $row["cre_date"] . "</td>");
 				echo ("</tr>"); 
 			}
             
