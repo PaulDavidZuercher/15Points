@@ -1,4 +1,4 @@
-$mysqli = new mysqli("localhost", "root", "rabadons0p", "PSWdatabase");
+$mysqli = new mysqli("localhost", "paul", "rabadons0p", "15PointsDB");
 
 if($mysqli->connect_errno)
 {
