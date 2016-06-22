@@ -9,7 +9,7 @@
 		{
   			$.ajax({
 				type: "POST",
-				rul:"/registerProc.php",
+				url:"/registerProc.php",
 				data {userName: $("#userName").val, E-MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
 				success:function(result){$('#output').html(result)}
 			})	
