@@ -25,6 +25,12 @@
 	</head>
 
 	<body>
+		
+		<ul>
+                        <li><a href="http://144.76.65.253/">Home</a></li>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a class="active" href="register.php">Register</a></li>
+                </ul>
 	
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
