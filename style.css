@@ -29,7 +29,7 @@ form{
 }
 
 #pwDiv{
-  background:rgba(255,255,255, 0.8);;
+  background-color: #333;
   border: 3px solid #008CBA;
   padding: 10px;
 }
