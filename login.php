@@ -4,7 +4,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
     
-      //
+      
       function checkUserPass(){ 
         $.ajax({
           type: "POST",
@@ -14,7 +14,7 @@
       });
       }
       
-      //
+      
       $(document).ready( 
         $("#btnUserInfo").click(
           function(e){
@@ -26,7 +26,6 @@
     </script>
   </head>
   <body>
-    //login dif --> Eingabefelder für userName und passWord
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
