@@ -91,9 +91,7 @@ while($primtest==false){
 
 }
 
- 
- 
-echo $d;
-echo $e;
+$e = $hilfszahl; 
+echo $e . "e";
 ?>
  
