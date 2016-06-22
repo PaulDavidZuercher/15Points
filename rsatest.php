@@ -76,6 +76,7 @@ while(1==1){
     }
     else{
         $e = $primarray[$index];
+        break;
     }
 }
 
