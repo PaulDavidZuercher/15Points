@@ -72,6 +72,7 @@ $teilerfremd = false;
                 $teilerfremd = true;
                  break;
             }
+            break;
         }
         $Rest = $e % $phiOfN;
         $phiOfN = $e;
