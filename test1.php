@@ -1,5 +1,4 @@
 
-
 <?php
 $zufallszahl = rand(1000000,9000000);
 $i = $zufallszahl-1;
@@ -59,27 +58,39 @@ $p = $zufallszahl;
 $q = $zufallszahl2;
 $n = $p * $q;
 $phiOfN = ($p−1)*($q−1);
-$teilerfremd = false;
+hilfszahl = 2;
 
-
- while ($teilerfremd == false) {
-    $e = rand(2, 100);
-    $Rest = 2;
-    while ($Rest != 0) {
-        if ($e % $phiOfN == 0) {
-            echo "\n ". $Rest . "ggT";
-            if ($Rest == 1) {
-                $teilerfremd = true;
-                 break;
-            }
-            break;
-        }
-        $Rest = $e % $phiOfN;
-        $phiOfN = $e;
-        $phiOfN = $Rest;
+while ($phiOfN % $hilfszahl == 0 ) {
+$hilfszahl = rand(3,1000);
+$i = $hilfszahl-1;
+$primtest = false;
+echo "erster Zufall: " . $hilfszahl . "\n";
+while($primtest==false){    
+    if($i == 1){
+        $primtest = true;
+        echo "erzeugte Primzahl: " . $hilfszahl;
+        break;
     }
+    
+    
+    while($i > 1){
+        if(($hilfszahl % $i) != 0 AND $i != 1){
+            $i = $i-1;
+        }
+        if(($hilfszahl % $i)==0 AND $i != 1){
+            $hilfszahl = rand(3,1000);
+            $i = $hilfszahl -1;
+            //echo "Keine Primzahl";
+            //$primtest=true;
+            break;
+            
+        }
+    }
+    
 }
- 
+
+}
+
  
  
 echo $d;
