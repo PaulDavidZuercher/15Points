@@ -5,10 +5,10 @@ generateRandomprimeNumbers();
 
 function generateRandomprimeNumbers()
 {
-  $randomNumber = mt_rand (0, PHP_INT_MIN);
+  $randomNumber = mt_rand (0, PHP_INT_MAX);
   $aOPP[] = array();//Array Of Probbable primes 
   
-  for($i = 0; $i < PHP_INT_MIN; $i++);
+  for($i = 0; $i < PHP_INT_MAX; $i++);
   {
     $aOPP[] = true;
   }
