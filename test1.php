@@ -1,4 +1,5 @@
 
+
 <?php
 $zufallszahl = rand(1000000,9000000);
 $i = $zufallszahl-1;
@@ -67,8 +68,10 @@ $teilerfremd = false;
     while ($Rest != 0) {
         if ($e % $phiOfN == 0) {
             echo "\n ". $Rest . "ggT";
-            $teilerfremd = true;
-            break;    
+            if ($Rest == 1) {
+                $teilerfremd = true;
+                 break;
+            }
         }
         $Rest = $e % $phiOfN;
         $phiOfN = $e;
