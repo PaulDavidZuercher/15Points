@@ -56,6 +56,3 @@
 		</div>
 	</body>
 </html>
-<?php 
-include 'registerProc.php';
-?>
