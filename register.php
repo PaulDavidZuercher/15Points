@@ -43,16 +43,13 @@
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
 			<form action="registerProc.php">
-	      		Username:<br>
+	      		<br>
 		      	<input id="logInput" type="text" name="userName" id="userName">
 		      	<br>
-		      	E-Mailadresse:<br>
 		      	<input id="logInput" type="text" name="E_MailAdresse" id="E_MailAdresse">
 		      	<br>
-      			Password:<br>
      		 	<input id="logInput" type="password" name="passWord" id="passWord">
      		 	<br>
-     		 	Password bestaetigen: <br>
      		 	<input id="logInput" type="password" name="passWord2" id="passWord2">
 			
 			
