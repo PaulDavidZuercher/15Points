@@ -33,6 +33,13 @@
       <li><a href="register.php">Register</a></li>
     </ul>
     
+    <div class="banner">
+      <h3>
+         Login
+      </h3>  
+      
+    </div>
+    
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
