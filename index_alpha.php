@@ -28,20 +28,19 @@
 			})
 		}
 <body>
-<h2>Password Manager</h2>
-<h3>Your passwords</h3>
+<h1>Password Manager</h1>
 	
 	<div id="passwordView" style="width:400px;height:200px;">
 	</div>
 	
 	
-	<h4>Add data</h4>
+	<h2>Add data</h2>
 	
 		<form>
     		<p>please add password data <br>
          	<p><input name="account" type="text" maxlength="30"><br>account name</p>
 		<p><input name="password" type="text"><br>password</p>
-		<button type="button" onclick="addLoginData()">ADD</button>
+		<a class="buttonBlue" href="#" onclick="addLoginData();return false;">Add</a>
     		</form> 
   
 </body> 
