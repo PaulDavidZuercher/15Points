@@ -5,22 +5,29 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript">
-		function checkEingaben()
+			
+		$(function checkEingaben()
 		{
   			$.ajax({
 				type: "POST",
 				url:"/registerProc.php",
-				data {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
+				data: {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
 				success:function(result){$('#output').html(result)}
 			})	
-		}
+		});
 		
 		$(document).ready(
-        	$("#btnUserInfo").click(
-          	function(e){
-            	e.preventDefault();
-            	checkEingaben();
-            	return false;
+        		$("#btnUserInfo").click(
+          			function(e){
+            				e.preventDefault();
+            				checkEingaben();
+            				return false;
+          	
+          				
+          			}
+          		);
+          	);
+          		
 		</script>
 	</head>
 
