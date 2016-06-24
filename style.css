@@ -26,9 +26,9 @@ border-bottom:1px solid #808080;
 }
 
 
-.headingVerticalCentered{
-  width: 200px;
-  height: 250px;
+.banner{
+  width: 85%;
+  height: 100px;
   padding: 20px;
 
   position: absolute;
