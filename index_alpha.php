@@ -41,8 +41,7 @@
     		<p>please add password data <br>
          	<p><input name="account" type="text" maxlength="30"><br>account name</p>
 		<p><input name="password" type="text"><br>password</p>
-		 /*<input type="submit" name="Tagknopf" value="ADD"> --> */
-		<button type="button" onclick="loadDoc()">ADD</button>
+		<button type="button" onclick="addLoginData()">ADD</button>
     		</form> 
   
 </body> 
