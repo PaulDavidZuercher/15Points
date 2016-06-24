@@ -17,6 +17,11 @@ form{
 }
 
 
+#logInput{
+width: 100%
+}
+
+
 .headingVerticalCentered{
   width: 200px;
   height: 250px;
