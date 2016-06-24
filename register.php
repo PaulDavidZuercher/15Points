@@ -44,16 +44,16 @@
 		
 			<form action="registerProc.php">
 	      		Username:<br>
-		      	<input type="text" name="userName" id="userName">
+		      	<input id"logInput" type="text" name="userName" id="userName">
 		      	<br>
 		      	E-Mailadresse:<br>
-		      	<input type="text" name="E_MailAdresse" id="E_MailAdresse">
+		      	<input id"logInput" type="text" name="E_MailAdresse" id="E_MailAdresse">
 		      	<br>
       			Password:<br>
-     		 	<input type="password" name="passWord" id="passWord">
+     		 	<input id"logInput" type="password" name="passWord" id="passWord">
      		 	<br>
      		 	Password bestaetigen: <br>
-     		 	<input type="password" name="passWord2" id="passWord2">
+     		 	<input id"logInput" type="password" name="passWord2" id="passWord2">
 			
 			
     		</form>
