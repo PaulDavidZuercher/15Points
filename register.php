@@ -41,21 +41,21 @@
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
 			<form action="registerProc.php">
-	      		<br>
-		      	<input id="logInput" type="text" placeholder="username" name="userName" id="userName">
-		      	<br>
-		      	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
-		      	<br>
-     		 	<input id="logInput" type="password" placeholder="Password" name="passWord" id="passWord">
-     		 	<br>
-     		 	<input id="logInput" type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
+	      		        <br>
+		        	<input id="logInput" type="text" placeholder="username" name="userName" id="userName">
+		        	<br>
+		        	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
+		        	<br>
+     		        	<input id="logInput" type="password" placeholder="Password" name="passWord" id="passWord">
+     		        	<br>
+     		        	<input id="logInput" type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
 			
-			
-    		</form>
-  		<br>
-		<a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
-		<a class="buttonBlueRight" href="login.php">Login</a> 
-		<div id="output" style="width:200px;30px">
+  		        <br>
+		        <a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+		        <a class="buttonBlueRight" href="login.php">Login</a> 
+		        <div id="output" style="width:200px;30px">
+		        </div>
+		        </form>
 		</div>
 	</body>
 </html>
