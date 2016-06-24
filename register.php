@@ -12,7 +12,7 @@
 				type: "POST",
 				url:"/registerProc.php",
 				data: {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
-				success:function(result){$('#output').html(result)}
+				success:function(result){$('#output').html(result);}
 			});
 		}
 		
