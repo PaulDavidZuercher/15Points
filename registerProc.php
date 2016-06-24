@@ -11,7 +11,7 @@ $accountCreation = new DateTime('now', new DateTimeZone('EUROPE'));
 
  
 if($passWord != $passWord2) {
-	echo 'Password unterschiedlich. Bitte erneut eingeben.'
+	echo "Password unterschiedlich. Bitte erneut eingeben.";
 	exit();
 }
 
@@ -19,11 +19,11 @@ $ergebnis = $mysqli->query("SELECT userName FROM user where userName = '$userNam
 
 if($ergebnis->fetch_row())
 {
-	echo 'Username existiert bereits'; 
+	echo "Username existiert bereits"; 
 	exit();
 }
 
 $mysqli->query("INSERT INTO user (userName, passWord, E-MailAdresse, accountCreation) VALUES ('$userName', '$passWord', '$E_MailAdresse', '$accountCreation')") 
 
- echo 'Regestrierung abgeschloßen. Willkommen ('$userName').'
+ echo "Regestrierung abgeschloßen. Willkommen ('$userName').";
 ?>
