@@ -2,7 +2,7 @@
 // todo: prevent sql injection
 
 include 'sqlConnect.php';
-
+echo("test");
 $userName = $_POST["userName"];
 $E_MailAdresse = $_POST["E_MailAdresse"];
 $passWord = $_POST["passWord"];
