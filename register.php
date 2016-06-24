@@ -47,7 +47,7 @@
 		      	<input id="logInput" type="text" name="userName" id="userName">
 		      	<br>
 		      	E-Mailadresse:<br>
-		      	<input iid="logInput" type="text" name="E_MailAdresse" id="E_MailAdresse">
+		      	<input id="logInput" type="text" name="E_MailAdresse" id="E_MailAdresse">
 		      	<br>
       			Password:<br>
      		 	<input id="logInput" type="password" name="passWord" id="passWord">
