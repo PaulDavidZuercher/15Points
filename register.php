@@ -12,6 +12,7 @@
 			{
 				alert("Working")
   				$.ajax({
+  					processData: false
 					type: "POST",
 					url:"registerProc.php",
 					data: {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
@@ -43,6 +44,7 @@
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
 			<form action="registerProc.php">
+	      		<br>
 		      	<input id="logInput" type="text" placeholder="username" name="userName" id="userName">
 		      	<br>
 		      	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
