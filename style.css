@@ -17,6 +17,18 @@ form{
 }
 
 
+.headingVerticalCentered{
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -100px;
+}
+
 .horizontalAndVerticalCentered{
   width: 200px;
   height: 250px;
