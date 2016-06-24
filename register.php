@@ -50,7 +50,7 @@
 			
     		</form>
   		<br>
-		<a class="buttonBlue" id="btnUserInfo" href="#" onclick="checkEingaben();return false;">Register</a>
+		<a class="buttonBlue" id="btnUserInfo" onclick="checkEingaben();return false;">Register</a>
 		<a class="buttonBlue" href="login.php">Log In </a> 
 		<div id="output" style="width:200px;30px">
 		</div>
