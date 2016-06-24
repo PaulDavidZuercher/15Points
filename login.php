@@ -36,11 +36,11 @@
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
-        <input type="text" name="userName"  id="userName">
+        <input id:"logInput" type="text" name="userName"  id="userName">
         <br>
         Password:
         <br>
-        <input type="password" name="passWord" id="passWord">
+        <input id:"logInput" type="password" name="passWord" id="passWord">
         <br> <br>
         <a id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</a> 
         <a class="buttonBlue" href="register.php">Register</a>
