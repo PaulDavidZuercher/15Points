@@ -61,8 +61,8 @@ body {
 }
 
 .button {
-    background-color: #4CAF50;
-    border: border: 1px solid blue;;
+    background-color: #008CBA;
+    border: 1px solid #008CBA;
     color: white;
     padding: 16px 32px;
     text-align: center;
@@ -70,17 +70,11 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;
 }
 
-.buttonBlue {
-    background-color: #008CBA;
-    color: white;
-    border: 2px solid #008CBA;
-}
 
 .buttonBlue:hover {
     background-color: white; 
