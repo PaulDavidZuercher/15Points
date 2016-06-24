@@ -89,11 +89,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border: #333;
 }
 
 li {
     float: left;
-    border: 2px solid #111;
 }
 
 li a {
