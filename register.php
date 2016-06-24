@@ -15,7 +15,13 @@
 					type: "POST",
 					url:"registerProc.php",
 					data: {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
-					success:function(result){$('#output').html(result);}
+					success:function(result){
+						$('#output').html(result);
+						
+					},
+					error: function() {
+	 				$('#output').html('<p>An error has occurred</p>');
+   					}
 				});
 			}
 		
@@ -43,13 +49,16 @@
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
 			<form action="registerProc.php">
-	      		<br>
+	      		Username:<br>
 		      	<input id="logInput" type="text" name="userName" id="userName">
 		      	<br>
+		      	E-Mailadresse:<br>
 		      	<input id="logInput" type="text" name="E_MailAdresse" id="E_MailAdresse">
 		      	<br>
+      			Password:<br>
      		 	<input id="logInput" type="password" name="passWord" id="passWord">
      		 	<br>
+     		 	Password bestaetigen: <br>
      		 	<input id="logInput" type="password" name="passWord2" id="passWord2">
 			
 			
