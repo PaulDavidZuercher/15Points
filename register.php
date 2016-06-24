@@ -8,6 +8,7 @@
 			
 		$(function checkEingaben()
 		{
+			alert("Working")
   			$.ajax({
 				type: "POST",
 				url:"/registerProc.php",
