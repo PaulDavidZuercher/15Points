@@ -28,12 +28,13 @@ border-bottom:1px solid #808080;
 
 
 .banner{
-  width: 100%;
+  width: 80%;
   height: 100px;
   align: center;
   position: absolute;
 
   top: 15%;
+  left 10%
 
 }
 
