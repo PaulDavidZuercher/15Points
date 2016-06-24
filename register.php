@@ -10,7 +10,7 @@
   			$.ajax({
 				type: "POST",
 				url:"/registerProc.php",
-				data {userName: $("#userName").val, E-MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
+				data {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
 				success:function(result){$('#output').html(result)}
 			})	
 		}
@@ -39,7 +39,7 @@
 		      	<input type="text" name="userName" id="userName">
 		      	<br>
 		      	E-Mailadresse:<br>
-		      	<input type="text" name="E-MailAdresse" id="E-MailAdresse">
+		      	<input type="text" name="E_MailAdresse" id="E_MailAdresse">
 		      	<br>
       			Password:<br>
      		 	<input type="password" name="passWord" id="passWord">
