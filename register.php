@@ -16,17 +16,13 @@
 			});
 		});
 		
-		$(document).ready(
+		$($(document).ready(
         		$("#btnUserInfo").click(
           			function(e){
             				e.preventDefault();
             				checkEingaben();
             				return false;
-          	
-          				
-          			}
-          		);
-          	);
+          			})));
           		
 		</script>
 	</head>
