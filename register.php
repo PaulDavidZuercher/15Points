@@ -37,6 +37,10 @@
                         <li><a href="login.php">Login</a></li>
                         <li><a class="active" href="register.php">Register</a></li>
                 </ul>
+                
+                <div class="banner">
+                        <h3>Login</h3>  
+                </div>
 	
 		<div id="pwDiv" class="horizontalAndVerticalCentered">
 		
