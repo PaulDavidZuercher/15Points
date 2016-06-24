@@ -58,8 +58,8 @@
 			
     		</form>
   		<br>
-		<a class="buttonBlue" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
-		<a class="buttonBlue" href="login.php">Log In </a> 
+		<a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+		<a class="buttonBlueRight" href="login.php">Log In </a> 
 		<div id="output" style="width:200px;30px">
 		</div>
 	</body>
