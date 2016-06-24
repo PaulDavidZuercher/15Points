@@ -40,7 +40,7 @@
         <br>
         Password:
         <br>
-        <input id="logInput" type="password" name="passWord" placeholder="Username" id="passWord">
+        <input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
         <br> <br>
         <a id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</a> 
         <a class="buttonBlue" href="register.php">Register</a>
