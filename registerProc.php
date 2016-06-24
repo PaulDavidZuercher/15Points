@@ -15,7 +15,7 @@ if($passWord != $passWord2) {
 	exit();
 }
 
-$ergebnis = $mysqli->query("SELECT userName FROM user where userName = '$userName' ");
+$ergebnis = $mysqli->query("SELECT userName FROM user WHERE userName = '".mysql_real_escape_string('$userName)."' ");
 
 if($ergebnis->fetch_row())
 {
