@@ -31,11 +31,8 @@ border-bottom:1px solid #808080;
   height: 100px;
   padding: 20px;
 
-  position: absolute;
   top: 20%;
   left: 50%;
-  margin-top: -125px;
-  margin-left: -100px;
 }
 
 .horizontalAndVerticalCentered{
