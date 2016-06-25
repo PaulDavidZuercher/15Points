@@ -8,7 +8,8 @@ function decrypt ( $txt, $puK, $n )
 {
   $e = $puK;
   $durchzaehlen = 0;
-  $decryptTxt = array;
+  $decryptTxt = array();
+  $txtLaenge = strlen ( string $txt );
 
   $zeichen = array
   ( 
@@ -50,7 +51,7 @@ function decrypt ( $txt, $puK, $n )
     "9" => "35",
   )
 
-  while ($durchzaehlen >= $txt.length) //für jedes einzele Zeichen des übergebenen txt´s ausführen
+  while ($durchzaehlen >= $txtLaenge) //für jedes einzele Zeichen des übergebenen txt´s ausführen
   { 
     $zwischenZeichen = substr ($txt, $durchzaehlen, 1); //liest einzelnes Zeichen aus dem übergebenen txt-String aus
     $zeichen($zwischenZeichen); //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
