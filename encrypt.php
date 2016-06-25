@@ -1,7 +1,8 @@
 <?php
-encrypt("115", 21, 4);
+encrypt("119", 21, 4);
 function encrypt ($txt, $prK, $n)
 {
+    $d = $prK;
   $durchzaehlen = 0;
   $encryptTxt = array ();
   $txtLaenge = strlen ($txt);
@@ -59,5 +60,4 @@ $encryptedTxtString = implode("",$encryptTxt) ;
 echo "Verschlüsselter Text:" . $encryptedTxtString;
 return $encryptedTxtString; //Rückgabe des entschlüsselten $txt-Passworts
 }
-
 ?>
