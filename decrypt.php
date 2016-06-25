@@ -60,6 +60,7 @@ function decrypt ( $txt, $puK, $n )
   }
 $decryptedTxtString = implode("",$decryptTxt);
   return $decryptedTxtString; //Rückgabe des verschlüsselten $txt-Passworts
+  echo $decryptedTxtString;
 }
 
 ?>
