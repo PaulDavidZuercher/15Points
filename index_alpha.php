@@ -51,7 +51,7 @@
     			<p>please add password data <br>
          		<p><input name="account" type="text"><br>account name</p>
 			<p><input name="password" type="text"><br>password</p>
-			<a class="buttonBlue" href="#" onclick="addLoginData();return false;">Add</a>
+			<a class="buttonBlueLeft" href="#" onclick="addLoginData();return false;">Add</a>
     		</form> 
     	</div>
   
