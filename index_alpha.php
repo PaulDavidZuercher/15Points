@@ -10,21 +10,23 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function addLoginData(){
+		function addLoginData()
+		{
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php",
 				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1 ,
 				
-			})
+			});
 		}
-		function addLoginData(){
+		function addLoginData()
+		{
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php",
 				data: {SetorGet: 2},
 				success: function(result){$("#passwordView").html = result}
-			})
+			});
 		}
 	</script>
 </head>
