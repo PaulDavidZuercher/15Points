@@ -15,7 +15,7 @@
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php",
-				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1,
+				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1},
 				success: function(result){$("#passwordView").html = result}
 				
 			});
