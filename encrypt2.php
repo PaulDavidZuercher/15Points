@@ -1,11 +1,11 @@
 <?php
 
-decrypt("23", 12, 3);
-function decrypt ( $txt, $puK, $n )
+encrypt("23", 12, 3);
+function encrypt ( $txt, $puK, $n )
 {
   $e = $puK;
   $durchzaehlen = 0;
-  $decryptTxt = array ();
+  $encryptTxt = array ();
   $txtLaenge = strlen ($txt);
   
   $zeichen = array
@@ -53,13 +53,13 @@ function decrypt ( $txt, $puK, $n )
   { 
     $zwischenZeichen = substr ($txt, $durchzaehlen, 1); //liest einzelnes Zeichen aus dem übergebenen txt-String aus
     $zeichenImArray = $zeichen[$zwischenZeichen]; //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
-    $decryptedZeichen = (pow ($zeichenImArray ,$e )) % $n; // von mathematik.de
-    $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
+    $encryptedZeichen = (pow ($zeichenImArray ,$e )) % $n; // von mathematik.de
+    $encryptTxt["$durchzaehlen"] = $encryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
    $durchzaehlen++;
   }
-$decryptedTxtString = implode("",$decryptTxt) ;
-echo "Verschlüsselter Text:" . $decryptedTxtString;
-return $decryptedTxtString; //Rückgabe des verschlüsselten $txt-Passworts
+$encryptedTxtString = implode(" ",$encryptTxt) ;
+echo "Verschlüsselter Text:" . $encryptedTxtString;
+return $encryptedTxtString; //Rückgabe des verschlüsselten $txt-Passworts
   
 }
 ?>
