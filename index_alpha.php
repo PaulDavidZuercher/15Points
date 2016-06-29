@@ -10,17 +10,17 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function addLoginData()
+		function addLoginDataToServer()
 		{
 			$.ajax({
 				type: "POST",
-				url: "/indexProc.php",
+				url: "indexProc.php",
 				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1},
 				success: function(result){$("#passwordView").html = result}
 				
 			});
 		}
-		function addLoginData()
+		function addLoginDataToDiv()
 		{
 			$.ajax({
 				type: "POST",
@@ -52,7 +52,7 @@
     			<p>please add password data <br>
          		<p><input name="account" type="text"><br>account name</p>
 			<p><input name="password" type="text"><br>password</p>
-			<a class="buttonBlueLeft" onclick="addLoginData();return false;">Add</a>
+			<a class="buttonBlueLeft" onclick="addLoginDataToServer();return false;">Add</a>
     		</form> 
     	</div>
   
