@@ -49,19 +49,19 @@ function decrypt ( $txt, $puK, $n )
   );
   
  
- $zwischenArray = explode(" ", $txt);
+ $zwischenArray = explode(" ", $txt); // liest aus übergebenem txt-String alle einzelnen Ergebnisse aus; Leerzeichen ist die Begrenzungszeichenkette und schreibt sie getrennt in ein array
  $arrayLaenge = count($zwischenArray);
-  while ($durchzaehlen <= $arrayLaenge)
+  while ($durchzaehlen <= $arrayLaenge) //durchläuft zwischenArray
   { 
-    $zwischenZeichen = $zwischenArray[$durchzaehlen]; 
-    $zwischenZeichen2 = (pow ($zwischenZeichen ,$e )) % $n; // von mathematik.de
-    $decryptedZeichen = $zeichen[$zwischenZeichen2]; //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
+    $zwischenZeichen = $zwischenArray[$durchzaehlen]; // einzelne Zahlenketten werden aus array qausgelsenen und in zwischenZeichen gespeichert
+    $zwischenZeichen2 = (pow ($zwischenZeichen ,$e )) % $n; // von mathematik.de, zwischenZeichen-Zahlenkette wird wieder entschlüsselt
+    $decryptedZeichen = $zeichen[$zwischenZeichen2]; // das entsprechende Zeichen zur entschlüsselten Zahlenkette wird im array zeichen gesucht 
     $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
     $durchzaehlen++;
   }
 $decryptedTxtString = implode("",$decryptTxt) ;
 echo "Entschlüsselter Text:" . $decryptedTxtString;
-return $decryptedTxtString; //Rückgabe des verschlüsselten $txt-Passworts
+return $decryptedTxtString; //Rückgabe des entschlüsselten $txt-Passworts
   
 }
 ?>
