@@ -1,7 +1,7 @@
 <html>
 
 <?php 
-  include('sqlConnect.php');
+  include('sqlConnect.php'); //Einbinden der Datenbank
 ?>
 
 <head>
@@ -10,21 +10,20 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function addLoginDataToServer()
+		function addLoginData() //übernehmen der Daten aus dem Formular per POST Methode; sofortiges tabellarisches Wiederanzeigen 
 		{
 			$.ajax({
 				type: "POST",
-				url: "indexProc.php",
-				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1},
-				success: function(result){$("#passwordView").html = result}
-				
+				url: "/indexProc.php", //Weiterleitung zur Datenbankanfrage
+				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1}, //Auslesen der Daten; Schreiben in Variablen
+				success: function(result){$("#passwordView").html = result} //Das geladene Ergebnis soll im "div", das "#paswordView" heißt, angezeigt werden
 			});
 		}
-		function addLoginDataToDiv()
+		function addLoginData()
 		{
 			$.ajax({
 				type: "POST",
-				url: "indexProc.php",
+				url: "/indexProc.php",
 				data: {SetorGet: 2},
 				success: function(result){$("#passwordView").html = result}
 			});
@@ -52,7 +51,7 @@
     			<p>please add password data <br>
          		<p><input name="account" type="text"><br>account name</p>
 			<p><input name="password" type="text"><br>password</p>
-			<a class="buttonBlueLeft" onclick="addLoginDataToServer();return false;">Add</a>
+			<a class="buttonBlueLeft" onclick="addLoginData();return false;">Add</a>
     		</form> 
     	</div>
   
