@@ -16,7 +16,7 @@
 				type: "POST",
 				url: "/indexProc.php", //Weiterleitung zur Datenbankanfrage
 				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1}, //Auslesen der Daten; Schreiben in Variablen
-				success: function(result){$("#passwordView").html = result} //Das geladene Ergebnis soll im "div", das "#paswordView" heißt, angezeigt werden
+				success: function(result){$("#loginTable").html = result} //Das geladene Ergebnis soll im "div", das "#paswordView" heißt, angezeigt werden
 			});
 		}
 		function addLoginDataToTable()
@@ -33,8 +33,8 @@
 
 <body>
 	<ul>
-      		<li><a href="http://144.76.65.253/">Home</a></li>
-      		<li><a class="active"  href="login.php">Login</a></li>
+      		<li><a class="active" href="http://144.76.65.253/">Home</a></li>
+      		<li><a href="login.php">Login</a></li>
       		<li><a href="register.php">Register</a></li>
 	</ul>
 	
@@ -46,11 +46,24 @@
 	</div>
 	
 	<div id="loginTable">
-
+		<table
+			<tr> <th>Website</th> <th> Username </th> <th> Password </th> <th> Data Created</th>
+		</table>
 	</div>
 	
 	<div id="pwDiv" class="horizontalAndVerticalCentered">
 		<form>
+			Accountname:
+			<br>
+			<input type="text" name="loginDataName" id="loginDataName">
+			<br>
+			Username:
+			<br>
+			<input type="text" name="userName" id="userName">
+			<br>
+			Password:
+			<br>
+			<input type="text" name="passWord" id="passWord">
     		</form> 
     	</div>
   
