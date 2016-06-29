@@ -24,7 +24,7 @@
 		{
 			$.ajax({
 				type: "POST",
-				url: "/indexProc.php",
+				url: "indexProc.php",
 				data: {SetorGet: 2},
 				success: function(result){$("#passwordView").html = result}
 			});
