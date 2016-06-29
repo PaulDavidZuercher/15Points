@@ -56,7 +56,7 @@ function decrypt ( $txt, $puK, $n )
     $zwischenZeichen = $zwischenArray[$durchzaehlen]; // einzelne Zahlenketten werden aus array qausgelsenen und in zwischenZeichen gespeichert
     $zwischenZeichen2 = (pow ($zwischenZeichen ,$e )) % $n; // von mathematik.de, zwischenZeichen-Zahlenkette wird wieder entschlüsselt
     $decryptedZeichen = $zeichen[$zwischenZeichen2]; // das entsprechende Zeichen zur entschlüsselten Zahlenkette wird im array zeichen gesucht 
-    $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
+    $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //Fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
     $durchzaehlen++;
   }
 $decryptedTxtString = implode("",$decryptTxt) ;
