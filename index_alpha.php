@@ -10,7 +10,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function addLoginData() //übernehmen der Daten aus dem Formular per POST Methode; sofortiges tabellarisches Wiederanzeigen 
+		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode; sofortiges tabellarisches Wiederanzeigen 
 		{
 			$.ajax({
 				type: "POST",
@@ -19,7 +19,7 @@
 				success: function(result){$("#passwordView").html = result} //Das geladene Ergebnis soll im "div", das "#paswordView" heißt, angezeigt werden
 			});
 		}
-		function addLoginData()
+		function addLoginDataToTable()
 		{
 			$.ajax({
 				type: "POST",
@@ -45,13 +45,12 @@
 	<div id="passwordView" style="width:400px;height:200px;">
 	</div>
 	
+	<div id="loginTable">
+
+	</div>
 	
 	<div id="pwDiv" class="horizontalAndVerticalCentered">
 		<form>
-    			<p>please add password data <br>
-         		<p><input name="account" type="text"><br>account name</p>
-			<p><input name="password" type="text"><br>password</p>
-			<a class="buttonBlueLeft" onclick="addLoginData();return false;">Add</a>
     		</form> 
     	</div>
   
