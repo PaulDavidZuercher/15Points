@@ -49,7 +49,7 @@ function encrypt ( $txt, $puK, $n )
   );
   
  
-  while ($durchzaehlen <= $txtLaenge) //für jedes einzele Zeichen des übergebenen txt´s ausführen 
+  while ($durchzaehlen <= $txtLaenge) //für jedes einzele Zeichen des übergebenen txts ausführen 
   { 
     $zwischenZeichen = substr ($txt, $durchzaehlen, 1); //liest einzelnes Zeichen aus dem übergebenen txt-String aus
     $zeichenImArray = $zeichen[$zwischenZeichen]; //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
