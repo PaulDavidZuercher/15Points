@@ -6,7 +6,7 @@ function decrypt ( $txt, $puK, $n )
   $e = $puK;
   $durchzaehlen = 0;
   $decryptTxt = array ();
-  $txtLaenge = strlen ($txt);
+  $zwischenArray = array ();
   
   $zeichen = array
   ( 
@@ -57,7 +57,7 @@ function decrypt ( $txt, $puK, $n )
     $zwischenZeichen2 = (pow ($zwischenZeichen ,$e )) % $n; // von mathematik.de
     $decryptedZeichen = $zeichen[$zwischenZeichen2]; //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
     $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
-   $durchzaehlen++;
+    $durchzaehlen++;
   }
 $decryptedTxtString = implode("",$decryptTxt) ;
 echo "Entschlüsselter Text:" . $decryptedTxtString;
