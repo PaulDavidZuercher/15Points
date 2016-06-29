@@ -21,7 +21,7 @@
             e.preventDefault();
             CheckUserPass();
             return false;
-          });
+          }));
       
     </script>
   </head>
