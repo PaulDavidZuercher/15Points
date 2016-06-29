@@ -26,7 +26,7 @@
     </script>
   </head>
   <body>
-    
+    <?php echo("Hallo");?>
     <ul>
       <li><a href="http://144.76.65.253/">Home</a></li>
       <li><a class="active"  href="login.php">Login</a></li>
