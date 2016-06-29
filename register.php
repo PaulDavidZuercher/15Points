@@ -46,7 +46,7 @@
 		
 			<form action="registerProc.php">
 	      		        <br>
-		        	<input id="logInput" type="text" placeholder="username" name="userName" id="userName">
+		        	<input id="logInput" type="text" placeholder="Username" name="userName" id="userName">
 		        	<br>
 		        	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
 		        	<br>
