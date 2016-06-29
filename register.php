@@ -42,7 +42,7 @@
                         <h3>Registrieren</h3>  
                 </div>
 	
-		<div id="pwDiv" class="horizontalAndVerticalCentered">
+		<div id="pwDiv" class="horizontalAndVerticalCenteredBig">
 		
 			<form action="registerProc.php">
 	      		        <br>
