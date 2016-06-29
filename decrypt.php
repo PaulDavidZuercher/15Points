@@ -1,9 +1,9 @@
 <?php
 
-decrypt("23", 12, 3);
-function decrypt ( $txt, $puK, $n )
+decrypt("1 29523 52537 0", 0.016393442622951, 58339);
+function decrypt($txt, $prK, $n)
 {
-  $e = $puK;
+  $e = $prK;
   $durchzaehlen = 0;
   $decryptTxt = array ();
   $zwischenArray = array ();
@@ -51,11 +51,12 @@ function decrypt ( $txt, $puK, $n )
  
  $zwischenArray = explode(" ", $txt); // liest aus übergebenem txt-String alle einzelnen Ergebnisse aus; Leerzeichen ist die Begrenzungszeichenkette und schreibt sie getrennt in ein array
  $arrayLaenge = count($zwischenArray);
-  while ($durchzaehlen <= $arrayLaenge) //durchläuft zwischenArray
+  while ($durchzaehlen < $arrayLaenge) //durchläuft zwischenArray
   { 
     $zwischenZeichen = $zwischenArray[$durchzaehlen]; // einzelne Zahlenketten werden aus array qausgelsenen und in zwischenZeichen gespeichert
     $zwischenZeichen2 = (pow ($zwischenZeichen ,$e )) % $n; // von mathematik.de, zwischenZeichen-Zahlenkette wird wieder entschlüsselt
-    $decryptedZeichen = $zeichen[$zwischenZeichen2]; // das entsprechende Zeichen zur entschlüsselten Zahlenkette wird im array zeichen gesucht 
+    $decryptedZeichen = array_search("$zwischenZeichen2", $zeichen);
+    //$decryptedZeichen = $zeichen[$zwischenZeichen2]; // das entsprechende Zeichen zur entschlüsselten Zahlenkette wird im array zeichen gesucht 
     $decryptTxt["$durchzaehlen"] = $decryptedZeichen; //Fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
     $durchzaehlen++;
   }
