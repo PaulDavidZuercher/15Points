@@ -53,7 +53,7 @@ function encrypt ( $txt, $puK, $n )
   { 
     $zwischenZeichen = substr ($txt, $durchzaehlen, 1); //liest einzelnes Zeichen aus dem übergebenen txt-String aus
     $zeichenImArray = $zeichen[$zwischenZeichen]; //nimmt das aus dem txt-string ausgewählte Zeichen und sucht es im array "zeichen"
-    $encryptedZeichen = (pow ($zeichenImArray ,$e )) % $n; // von mathematik.de
+    $encryptedZeichen = (pow ($zeichenImArray ,$e )) % $n; // von mathematik.de; Zahlenkette wird verschlüsselt
     $encryptTxt["$durchzaehlen"] = $encryptedZeichen; //fügt zu Gesamt_decryptedTxt_array die einzelnen decrypted Zeichen hinzu
    $durchzaehlen++;
   }
