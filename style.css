@@ -142,3 +142,8 @@ li a:hover:not(.active) {
 .active {
     background-color: #008CBA;
 }
+
+#loginTable{
+	width: 80%;
+	height:30%;
+}
