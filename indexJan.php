@@ -57,7 +57,7 @@
 			</div>
 			
 			<div class="buttonDiv">
-				<a class="buttonBlueRight">Save</a>
+				<a class="buttonHome">Save</a>
 			</div>	
 			
 		</form>
