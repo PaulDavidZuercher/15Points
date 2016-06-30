@@ -30,6 +30,24 @@ form{
   left: 20%;
 }
 
+.wrapperLogin{
+  width: 60%;
+  height: 60%;
+  
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+.wrapperRegister{
+  width: 60%;
+  height: 60%;
+  
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
 .tableDiv{
   width: 100%;
   height: 80%;
