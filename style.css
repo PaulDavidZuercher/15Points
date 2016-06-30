@@ -60,6 +60,7 @@ form{
 .buttonBox{
 	width: 60%;
 	height: 10%;
+	position: absolute;
 	
 	top: 100%;
 	left 20%
