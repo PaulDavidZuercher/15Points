@@ -25,7 +25,7 @@ function generateRandomprimeNumbers()
 	$number = $indexOfNumber +1;
 	while($number < count($aOPP))
         {
-		echo("removing: " .(number - 1));
+		echo("removing: " .($number - 1));
 		
 		$aOPP[$number-1] =false;
 		$number = $number + ($indexOfNumber +1);
