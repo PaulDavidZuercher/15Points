@@ -202,23 +202,6 @@ li a:hover:not(.active) {
 	height:30%;
 }
 
-
-.buttonBlueLeft {
-    background-color: #008CBA;
-    border: 2px solid #008CBA;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    float: left;
-    width: 10%;
-}
-
 .buttonHome {
     background-color: #008CBA;
     border: 2px solid #008CBA;
@@ -241,33 +224,27 @@ li a:hover:not(.active) {
     color: black; 
     border: 2px solid #008CBA;
 }
-
-.buttonBlueRight {
+.buttonLogin {
     background-color: #008CBA;
     border: 2px solid #008CBA;
+    padding: 10px 10px;
     color: white;
-    padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     cursor: pointer;
-    float: right;
-    width: 10%;
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: -11px -11px;
+    float: left;
 }
 
-.buttonBlueRight:hover {
+.buttonLogin:hover {
     text-align: center;
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
 }
 
-.buttonBlueLeft:hover {
-    text-align: center;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-}
+
