@@ -6,8 +6,8 @@ function generateRandomprimeNumbers()
 {
   $maxGenInt = 200;
   $randomNumber = mt_rand (0, $maxGenInt);
-  $aOPP[] = array();//Array Of Probbable primes 
-for($i = 0; $i < $randomNumber; $i++);
+  $aOPP = [];//Array Of Probbable primes 
+  for($i = 0; $i < $randomNumber; $i++);
   {
 	echo("working: maxGenInt Progress:  $i from $randomNumber");
 	$aOPP[] = true;
