@@ -11,10 +11,11 @@
     //{
     // 	echo ("Selected Rows: " . $res->num_rows );
     //}
-      if($stmt =$mysqli->prepare("Select * from user where userName = '?' && passWord = '?'")){
+    if($stmt =$mysqli->prepare("Select * from user where userName = '?' && passWord = '?'")){
       $res = $stmt->get_result();
+      echo("test: " . $res);
       if($res->num_rows > 0)
-      {
+        {
         //user exists 
          $_SESSION["login"] = true;
          $_SESSION["userName"] = $_POST["userName"]; //todo find more safe version :)
