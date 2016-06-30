@@ -30,6 +30,22 @@ form{
   left: 20%;
 }
 
+.AddDiv{
+  width: 60%;
+  height: 60px;
+  
+  position: absolute;
+  left: 20%;
+}
+
+.miniDiv{
+  width: 33%;
+  height: 60px;
+  float: left;
+  
+  position: absolute;
+}
+
 .banner{
   width: 80%;
   height: 100px;
