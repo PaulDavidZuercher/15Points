@@ -38,7 +38,7 @@
       		<li><a href="register.php">Register</a></li>
 	</ul>
 	
-	<div class="wrapper">
+	<div class="wrapperHome">
 	
 		<div class="tableDiv">
 		</div>	
