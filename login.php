@@ -66,11 +66,11 @@ $(document).ready(function(){
 				<input class="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
 			</div>
 			
-			
-        		<a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
-        		<a class="buttonBlueRight" href="register.php">Register</a>
         		<div id="output" style="width:200px;30px">
         		</div>
+        		
+        		<a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
+        		<a class="buttonBlueRight" href="register.php">Register</a>
       		
       		</div>
       	</form>
