@@ -19,7 +19,7 @@ $(document).ready(function(){
         $("#btnUserInfo").click(
           function(e){
             e.preventDefault();
-            CheckUserPass();
+            checkUserPass();
             return false;
           });
 });
