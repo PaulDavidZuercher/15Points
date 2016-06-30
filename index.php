@@ -46,13 +46,13 @@
 		<form>
 			<div class="AddDiv">
 				<div class="miniDiv">
-					<input id="logInput" type="text" name="userName" placeholder="Name" id="Name">
+					<input class="logInput" type="text" name="userName" placeholder="Name" id="Name">
 				</div>
 				<div class="miniDiv">
-					<input id="logInput" type="text" name="userName" placeholder="Username" id="userName">
+					<input class="logInput" type="text" name="userName" placeholder="Username" id="userName">
 				</div>
 				<div class="miniDiv">
-					<input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
+					<input class="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
 				</div>	
 			</div>
 			
