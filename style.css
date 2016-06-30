@@ -31,6 +31,7 @@ form{
 }
 
 .tableDiv{
+  width: 100%;
   height: 400px;
   background-color: gray;
   
@@ -38,6 +39,7 @@ form{
 }
 
 .AddDiv{
+  width: 100%;	
   height: 34px;
   float: initial;
   
