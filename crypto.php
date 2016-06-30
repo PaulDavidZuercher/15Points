@@ -16,7 +16,7 @@ function generateRandomprimeNumbers()
 
   $maxGenInt = 214745;
   #todo add in debug mode randomNumber = maxGenInt
-  $randomNumber = (!$debug ?  mt_rand (0, $maxGenInt) : $maxGenInt);
+  $randomNumber = ($debug ? $maxGenInt : mt_rand (0, $maxGenInt));
   $aOPP = [];//Array Of Probbable primes 
   for($i = 0; $i < $randomNumber; $i++)
   {
