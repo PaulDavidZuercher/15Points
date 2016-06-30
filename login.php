@@ -1,7 +1,7 @@
 <?php
 	start_session();
 	if($_SESSION["login"] && $_GET["DEBUG"] != "true")
-		echo("<head><script>window.location = \"/index\"</script></head><body><p>redirecting...</p></body>"
+		echo("<head><script>window.location = \"/index\"</script></head><body><p>redirecting...</p></body>");
 ?>
 
 
