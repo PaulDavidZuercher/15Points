@@ -7,7 +7,7 @@
     }
     
     $cre_date = new DateTime('now', new DateTimeZone('EUROPE'));
-    $SetorGet = $_POST["SetorGet"]
+    $SetorGet = $_POST["SetorGet"];
     /*if($_POST["userName"] == )
     {
         die("Try Not to Hack me m8 :)");
