@@ -6,14 +6,16 @@
     
       function checkUserPass(){ 
         alert("called :)");
+        var pw = $(#userName).val;
+        var un = $(#passWord).val;
         $.post("loginProc.php", 
 	{
-		'userName' : "test", 
-		'passWord' : "1234"
+		'userName' : un, 
+		'passWord' : pw
 	},
 	function(data,status)
 	{
-		alert("Data: " + data + "\n Status : " + status);
+		$(#output).html(data);
 	});
       }
       
@@ -42,11 +44,11 @@ $(document).ready(function(){
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
-        <input id="logInput" type="text" name="userName" placeholder="Username"  id="userName">
+        <input type="text" name="userName" placeholder="Username"  id="userName">
         <br>
         Password:
         <br>
-        <input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
+        <input type="password" name="passWord" placeholder="Password" id="passWord">
         <br> <br>
         <a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
         <a class="buttonBlueRight" href="register.php">Register</a>
