@@ -43,7 +43,7 @@ $(document).ready(function(){
       <li><a href="http://144.76.65.253/">Home</a></li>
       <li><a class="active"  href="login.php">Login</a></li>
       <li><a href="register.php">Register</a></li>
-      <li><a class="right" href="Logout.php">Logout</a></li>
+      <li><a class="right" href="Logout.php">logout</a></li>
     </ul>
     
     <div class="banner">
