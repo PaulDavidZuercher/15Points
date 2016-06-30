@@ -56,7 +56,7 @@ form{
 
 .buttonDiv{
   width: 10%;
-  height: 10%;
+  height: 8%;
   position: absolute;
   float: initial;
   
@@ -170,8 +170,11 @@ li a:hover:not(.active) {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
+    display: block;
     width: 100%;
     height: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
 }
 
 .buttonHome:hover {
