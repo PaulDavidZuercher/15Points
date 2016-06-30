@@ -175,10 +175,11 @@ li a:hover:not(.active) {
 .buttonHome {
     background-color: #008CBA;
     border: 2px solid #008CBA;
+    padding: 10% 10% 10% 10%;
     color: white;
     text-align: center;
-    //font-size: 16px;
-    transition-duration: 0.4s;
+    font-size: 16px;
+    transition-duration: 0.3s;
     cursor: pointer;
     display: block;
     width: 100%;
