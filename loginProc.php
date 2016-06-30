@@ -7,7 +7,7 @@
   {
     $userName = $_POST["userName"];
     $passWord = $_POST["passWord"];
-    if($res = $mysqli->query("Select * from user where userName = '$username' && passWord = '$passWord'"))
+    if($res = $mysqli->query("Select * from user where userName = '$userName' && passWord = '$passWord'"))
     {
      	echo ("Selected Rows: " . $res->num_rows );
     }
