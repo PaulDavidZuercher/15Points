@@ -19,10 +19,11 @@ for($i = 0; $i < $randomNumber; $i++);
     echo("working...");
     if($aOPP[$indexOfNumber])
     {
-	echo("removing: " .(indexOfNumber +1));
 	$number = $indexOfNumber +1;
 	while($number < count($aOPP))
         {
+		echo("removing: " .(number - 1));
+		
 		$aOPP[$number-1] =false;
 		$number = $number + ($indexOfNumber +1);
 	}
