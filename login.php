@@ -6,8 +6,8 @@
     
       function checkUserPass(){ 
         alert("called :)");
-        var pw = $(#userName).val;
-        var un = $(#passWord).val;
+        var pw = $('#userName').val;
+        var un = $('#passWord').val;
         $.post("loginProc.php", 
 	{
 		'userName' : un, 
@@ -15,7 +15,7 @@
 	},
 	function(data,status)
 	{
-		$(#output).html(data);
+		$('#output').html(data);
 	});
       }
       
