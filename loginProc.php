@@ -6,7 +6,12 @@
   if(!empty($_POST))
   {
     $userName = $_POST["userName"];
-    if($stmt =$mysqli->prepare("Select * from user where userName = '?' && passWord = '?'")){
+    $passWord = $_POST["PassWord"];
+    if($res = $mysqli->query("Select * from user where userName = '$username' && passWord = '$passWord'"))
+    {
+     	echo ("Selected Rows: " . $res->num_rows );
+    }
+      /*if($stmt =$mysqli->prepare("Select * from user where userName = '?' && passWord = '?'")){
       echo("userName:  {$_POST["userName"]}, pasWordi: {$_POST["passWord"]}");
       $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
       $stmt->execute();
@@ -22,6 +27,7 @@
       }
     
       echo("<p> invalid Username/Password Combination </p>");
+	*/
     }
   }
 ?>

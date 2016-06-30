@@ -15,12 +15,6 @@
 	{
 		alert("Data: " + data + "\n Status : " + status);
 	});
-       <?php /*$.ajax({
-          type: "POST",
-          url: "/loginProc.php",
-          data: {userName: $("#userName").val, passWord: $("#passWord").val},
-          success:function(result){$('#output').html(result)}
-      });*/?>
       }
       
 $(document).ready(function(){      
