@@ -17,7 +17,7 @@ function generateRandomprimeNumbers()
   }
   echo nl2br("Start on removing:");
   
-  for($indexOfNumber = 3; $indexOfNumber < $randomNumber;$indexOfNumber++)
+  for($indexOfNumber = 2; $indexOfNumber < $randomNumber;$indexOfNumber++)
   {
     if($aOPP[$indexOfNumber])
     {
