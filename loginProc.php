@@ -7,9 +7,11 @@
     $userName = $_POST["userName"];
     $stmt =$mysqli->prepare("Select * from user where userName = ? && passWord = ?");
     $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
-    if($res = $stmt->execute())
+    $stmt->execute();
+    $stmt->close();
+    if($res = $stmt->query())
     {
-      if($res && $res->num_rows > 0)
+      if($res->num_rows > 0)
       {
         //user exists 
         $_SESSION["login"] = true;
@@ -18,6 +20,9 @@
         echo("<script type=\"text/javascript\"> window.location = \"/index.php\"; </script>" );
         exit();
         
+      }
+      else{
+          echo("Query Error" . $mysqli->connect_errno());
       }
       
       echo("<p> invalid Username/Password Combination </p>");
