@@ -45,6 +45,7 @@
       		<li><a class="active" href="http://144.76.65.253/">Home</a></li> 
       		<li><a href="login.php">Login</a></li>
       		<li><a href="register.php">Register</a></li>
+      		<li><a class="right" href="Logout.php">Logout</a></li>
 	</ul>
 	
 	<div class="wrapperHome">
@@ -55,13 +56,13 @@
 		<form>
 			<div class="AddDiv">
 				<div class="miniDiv">
-					<input id="logInput" type="text" name="userName" placeholder="Name" id="Name">
+					<input class="logInput" type="text" name="userName" placeholder="Name" id="Name">
 				</div>
 				<div class="miniDiv">
-					<input id="logInput" type="text" name="userName" placeholder="Username" id="userName">
+					<input class="logInput" type="text" name="userName" placeholder="Username" id="userName">
 				</div>
 				<div class="miniDiv">
-					<input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
+					<input class="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
 				</div>	
 			</div>
 			
