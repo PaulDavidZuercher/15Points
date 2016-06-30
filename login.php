@@ -16,13 +16,12 @@
       }
       
       
-      $(document).ready( 
         $("#btnUserInfo").click(
           function(e){
             e.preventDefault();
             CheckUserPass();
             return false;
-          }));
+          });
       
     </script>
   </head>
