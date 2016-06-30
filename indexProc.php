@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     include 'sqlConnect.php';
     
     if(!$SESSION["login"])
