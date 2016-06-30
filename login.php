@@ -13,7 +13,7 @@
 	},
 	function(data,status)
 	{
-		alert("Data: " . data . "\n Status : " . status)
+		alert("Data: " + data + "\n Status : " + status);
 	});
        <?php /*$.ajax({
           type: "POST",
