@@ -1,9 +1,9 @@
 <?php
-if($_GET["Version"] == "true")
-	echo("Version 0.1001");
+if($_GET["Debug"] == "true")
+	echo("Version 0.1001 \n");
 
 generateRandomprimeNumbers();
-echo ("finished");
+echo ("finished \n");
 
 function generateRandomprimeNumbers()
 {
@@ -12,28 +12,27 @@ function generateRandomprimeNumbers()
   $aOPP = [];//Array Of Probbable primes 
   for($i = 0; $i < $randomNumber; $i++)
   {
-	echo("working: maxGenInt Progress:  $i from $randomNumber");
+	echo("working: maxGenInt Progress:  $i from $randomNumber \n");
 	$aOPP[] = true;
   }
-  echo ("test2");
+  echo ("Start on removing:");
   
   for($indexOfNumber = 2; $indexOfNumber < count($aOPP); $indexOfNumber++)
   {
-    echo("working...");
     if($aOPP[$indexOfNumber])
     {
 	$number = $indexOfNumber +1;
 	while($number < count($aOPP))
         {
-		echo("removing: " .($number - 1));
+		echo("removing: " .($number - 1). "\n");
 		
 		$aOPP[$number-1] =false;
 		$number = $number + ($indexOfNumber +1);
 	}
     }
   }
-  echo ("test3");
-  $pimes[] = array();
+  echo ("pint primes: \n");
+  $pimes = []; 
   
   for($i = 0; $i < (count ($aOPP)-1); $i++);
   {
