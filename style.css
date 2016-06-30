@@ -92,6 +92,13 @@ form{
   left: 45%;
 }
 
+.inputDiv{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  float: initial;
+}
+
 .textDiv{
   width: 60%;
   height: 40%;
