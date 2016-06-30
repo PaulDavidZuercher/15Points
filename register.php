@@ -48,13 +48,13 @@
 		
 			<form action="registerProc.php">
 	      		        <br>
-		        	<input id="logInput" type="text" placeholder="Username" name="userName" id="userName">
+		        	<input  type="text" placeholder="Username" name="userName" id="userName">
 		        	<br>
-		        	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
+		        	<input  type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
 		        	<br>
-     		        	<input id="logInput" type="password" placeholder="Password" name="passWord" id="passWord">
+     		        	<input  type="password" placeholder="Password" name="passWord" id="passWord">
      		        	<br>
-     		        	<input id="logInput" type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
+     		        	<input  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
 			
   		        <br>
 		        <a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
