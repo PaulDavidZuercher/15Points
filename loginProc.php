@@ -6,12 +6,11 @@
   if(!empty($_POST))
   {
     $userName = $_POST["userName"];
-    $stmt =$mysqli->prepare("Select * from user where userName = ? && passWord = ?");
+    if( $stmt =$mysqli->prepare("Select * from user where userName = ? && passWord = ?")){
     $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
     $stmt->execute();
-    $stmt->close();
-    if($res = $stmt->query())
-    {
+    $stmt->bind_result($res);
+    $stmt->fetch(); 
       if($res->num_rows > 0)
       {
         //user exists 
