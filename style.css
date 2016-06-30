@@ -92,6 +92,13 @@ form{
   left: 45%;
 }
 
+.inputDiv{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  float: initial;
+}
+
 .textDiv{
   width: 60%;
   height: 40%;
@@ -142,7 +149,7 @@ form{
   padding: 10px;
 }
 
-#logInput{
+.logInput{
 width: 100%;
 padding:8px;
 display:block;
