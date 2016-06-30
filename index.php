@@ -1,6 +1,11 @@
 <html>
 
 <?php 
+session_start();
+if(!$_SESSION["login"] && $_GET["debug"] != "true")
+	die("<html> <head><script>window.location = \"login.php\"</script> </head><body> </body> </html>");
+
+
   include('sqlConnect.php'); //Einbinden der Datenbank
 ?>
 

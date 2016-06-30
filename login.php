@@ -1,7 +1,7 @@
 <?php
 session_start();	
 if($_SESSION["login"] && $_GET["debug"] != "true")
-	die("<head><script>window.location = \"/index.php\"</script></head><body><p>redirecting...</p></body>");
+	die("<html><head><script>window.location = \"/index.php\"</script></head><body><p>redirecting...</p></body></html>");
 ?>
 
 
@@ -43,7 +43,6 @@ $(document).ready(function(){
       <li><a href="http://144.76.65.253/">Home</a></li>
       <li><a class="active"  href="login.php">Login</a></li>
       <li><a href="register.php">Register</a></li>
-      <li><a class="right" href="Logout.php">logout</a></li>
     </ul>
     
     <div class="banner">
@@ -74,8 +73,8 @@ $(document).ready(function(){
       		</div>
       		
       		<div class="buttonBox">
-      		<a id="btnUserInfo" class="buttonLogin">Login</a> 
-        	<a class="buttonLogin" href="register.php">Register</a>
+      		<a id="btnUserInfo" class="buttonHome">Login</a> 
+        	<a class="buttonHome" href="register.php">Register</a>
         	</div>
         	
       	</form>
