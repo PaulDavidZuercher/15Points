@@ -16,6 +16,7 @@
 	function(data,status)
 	{
 		$('#output').html(data);
+		alert(data);
 	},"json");
       }
       
