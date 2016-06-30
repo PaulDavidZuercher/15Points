@@ -1,6 +1,6 @@
 <?php
 if($_GET["Debug"] == "true")
-	echo nl2br("Version 0.1010 \n");
+	echo nl2br("Version 0.1011 \n");
 
 generateRandomprimeNumbers();
 echo nl2br("finished \n");
@@ -31,10 +31,11 @@ function generateRandomprimeNumbers()
 	}
     }
   }
+  
   echo nl2br("pint primes: \n");
   $pimes = []; 
   
-  for($i = 0; $i < (count ($aOPP)-1); $i++);
+  for($i = 0; $i < $randomNumber; $i++)
   {
     if($aOPP[$i])
     {
