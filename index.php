@@ -12,21 +12,20 @@
 	
 		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode; sofortiges tabellarisches Wiederanzeigen 
 		{
-			$.ajax({
-				type: "POST",
-				url: "/indexProc.php", //Weiterleitung zur Datenbankanfrage
-				data: {loginDataName: $("#account").val, passWord: $('#password').val, SetorGet: 1}, //Auslesen der Daten; Schreiben in Variablen
-				success: function(result){$("#loginTable").html = result} //Das geladene Ergebnis soll im "div", das "#paswordView" heißt, angezeigt werden
-			});
+			var name = $('Name').val();
+			var userName = $('userName').val();
+			var passWord = $('passWord').val();
+
+			$.post("indexProc.php",{'SetOrGet': 1,'name' : name, 'userName' : userName, 'passWord' : passWord, function (data, status){alert("result :" +data)});
+			
 		}
 		function addLoginDataToTable()
 		{
-			$.ajax({
-				type: "POST",
-				url: "/indexProc.php",
-				data: {SetorGet: 2},
-				success: function(result){$("#passwordView").html = result}
-			});
+			$.post(
+				"indexProc.php",
+				{'SetOrGet': 2},
+				function(result, status){$("#passwordView").html = result}
+			);
 		}
 	</script>
 </head>
