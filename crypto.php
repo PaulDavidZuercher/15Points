@@ -13,7 +13,6 @@ function generateRandomprimeNumbers()
   for($i = 0; $i < $randomNumber; $i++)
   {
 	$aOPP[] = true;
-	ob_end_clean();
   }
    
   for($indexOfNumber = 1; $indexOfNumber < $randomNumber;$indexOfNumber++)
