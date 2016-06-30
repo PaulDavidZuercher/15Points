@@ -22,8 +22,8 @@ form{
 }
 
 .tableDiv{
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 400px;
   
   position: absolute;
   top: 50%;
@@ -37,7 +37,7 @@ form{
   height: 100px;
   position: absolute;
 
-  top: 15%;
+  top: 10%;
   left: 10%;
 
 }
