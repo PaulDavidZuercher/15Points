@@ -10,7 +10,8 @@
     echo ("Username: '$userName', PassWord '$passWord'"); 
     if($res = $mysqli->query("Select * from user where userName = '$userName' && passWord = '$passWord'"))
     {
-      if($res->num_rows > 0){
+      if($res->num_rows > 0)
+      {
         die("<script type=\"text/javascript\"> window.location = \"/index.php\"; </script>" );
         exit();
       }
