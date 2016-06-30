@@ -46,13 +46,13 @@ $(document).ready(function(){
     	<form>
     		<div class="boxLogin">
     			
-			<div class="placeholder"></div>
+			<div class="placeHolder"></div>
 			
 			<div class="inputDiv">
 				<input <input class="logInput" type="text" name="userName" placeholder="Username"  id="userName">
 			</div>
 			
-			<div class="placeholder"></div>
+			<div class="placeHolder"></div>
 			
 			<div class="inputDiv">
 				<input class="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
