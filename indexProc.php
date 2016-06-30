@@ -2,7 +2,7 @@
     session_start();
     include 'sqlConnect.php';
     
-    if(isset($_SESSION["login"]) || !$_SESSION["login"])
+    if(!$_SESSION["login"])
     {
         die("<html> <head> <title> Error 1234 </title> </head><body> <h1> Please Login first </h1> </body> </html>");
     }
