@@ -149,7 +149,7 @@ form{
   padding: 10px;
 }
 
-#logInput{
+.logInput{
 width: 100%;
 padding:8px;
 display:block;
