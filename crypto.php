@@ -16,18 +16,18 @@ function generateRandomprimeNumbers()
   
   for($indexOfNumber = 2; $indexOfNumber < count($aOPP); $indexOfNumber++)
   {
-    /*if($aOPP[$indexOfNumber])
+    if($aOPP[$indexOfNumber])
     echo("working...")
     if($aOPP[$indexOfNumber])
     {
-	echo("removing: " .(indexOfNumber +1));
+	/*echo("removing: " .(indexOfNumber +1));
 	$number = $indexOfNumber +1;
 	while($number < count($aOPP))
         {
 		$aOPP[$number-1] =false;
 		$number = $number + ($indexOfNumber +1);
-        }
-    }*/
+	}*/
+    }
   }
   echo ("test3");
   $pimes[] = array();
