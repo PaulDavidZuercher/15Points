@@ -7,7 +7,7 @@ echo nl2br("finished \n");
 
 function generateRandomprimeNumbers()
 {
-  $maxGenInt = 2147;
+  $maxGenInt = 214745;
   $randomNumber = mt_rand (0, $maxGenInt);
   $aOPP = [];//Array Of Probbable primes 
   for($i = 0; $i < $randomNumber; $i++)
