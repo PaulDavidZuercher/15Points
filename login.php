@@ -4,7 +4,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
     
-      
+      //gibt Useranme und password aus form weiter zur loginProc.php
       function checkUserPass(){ 
 	alert("Func call checkUserPass");
         $.ajax({
