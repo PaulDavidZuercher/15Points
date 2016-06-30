@@ -1,5 +1,5 @@
 <?php
-session_start(sdw);	
+session_start();	
 if($_SESSION["login"] && $_GET["debug"] != "true")
 	echo("<head><script>window.location = \"/index.php\"</script></head><body><p>redirecting...</p></body>");
 	start_session();
