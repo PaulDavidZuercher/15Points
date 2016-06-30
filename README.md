@@ -27,3 +27,10 @@ ip: 144.76.65.253
 username: paul
 password: rabadons0p
 databasename: 15PointsDB
+
+
+Webside TestUser:
+
+userName: test
+
+Password: 1234

@@ -21,29 +21,33 @@
             e.preventDefault();
             CheckUserPass();
             return false;
-          });
+          }));
       
     </script>
   </head>
   <body>
-    
+    <?php echo("Hallo");?>
     <ul>
       <li><a href="http://144.76.65.253/">Home</a></li>
       <li><a class="active"  href="login.php">Login</a></li>
       <li><a href="register.php">Register</a></li>
     </ul>
     
+    <div class="banner">
+      <h3>Login</h3>  
+    </div>
+    
     <div id="pwDiv" class="horizontalAndVerticalCentered">
       <form>
         Username:<br>
-        <input type="text" name="userName"  id="userName">
+        <input id="logInput" type="text" name="userName" placeholder="Username"  id="userName">
         <br>
         Password:
         <br>
-        <input type="password" name="passWord" id="passWord">
+        <input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
         <br> <br>
-        <a id="btnUserInfo" class="buttonBlue" href="#" onclick="checkUserPass();return false;">Login</a> 
-        <a class="buttonBlue" href="register.php">Register</a>
+        <a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
+        <a class="buttonBlueRight" href="register.php">Register</a>
         <div id="output" style="width:200px;30px">
         </div>
       </form>

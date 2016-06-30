@@ -1,6 +1,7 @@
-h1 {
+h3 {
     	font-family: Arial, Helvetica, sans-serif;
         font-size: 40px;
+        text-align: center;
 }
 
 p {
@@ -16,6 +17,37 @@ form{
 	color: white;
 }
 
+
+#logInput{
+width: 100%;
+padding:8px;
+display:block;
+border:none;
+border-bottom:1px solid #808080;
+}
+
+
+.banner{
+  width: 80%;
+  height: 100px;
+  position: absolute;
+
+  top: 15%;
+  left: 10%;
+
+}
+
+.horizontalAndVerticalCenteredBig{
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -100px;
+}
 
 .horizontalAndVerticalCentered{
   width: 200px;
@@ -36,12 +68,12 @@ form{
 }
 
 body {
-    background-color: #008CBA;
+    background-color: white;
 }
 
-.button {
-    background-color: #4CAF50;
-    border: border: 1px solid blue;;
+.buttonBlueLeft {
+    background-color: #008CBA;
+    border: 2px solid #008CBA;
     color: white;
     padding: 16px 32px;
     text-align: center;
@@ -49,19 +81,35 @@ body {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;
+    width: 10%;
 }
 
-.buttonBlue {
+.buttonBlueRight {
     background-color: #008CBA;
+    border: 2px solid #008CBA;
     color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: right;
+    width: 10%;
+}
+
+.buttonBlueRight:hover {
+    background-color: white; 
+    color: black; 
     border: 2px solid #008CBA;
 }
 
-.buttonBlue:hover {
+.buttonBlueLeft:hover {
     background-color: white; 
     color: black; 
     border: 2px solid #008CBA;
@@ -93,4 +141,9 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #008CBA;
+}
+
+#loginTable{
+	width: 80%;
+	height:30%;
 }

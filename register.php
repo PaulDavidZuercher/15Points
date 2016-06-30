@@ -5,22 +5,28 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript">
-		function checkEingaben()
-		{
-  			$.ajax({
-				type: "POST",
-				url:"/registerProc.php",
-				data {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
-				success:function(result){$('#output').html(result)}
-			})	
-		}
+	
+			function checkEingaben()
+			{
+				alert("Working")
+  				$.ajax({
+  					processData: false,
+					type: "POST",
+					url:"registerProc.php",
+					data: {userName: $("#userName").val, E_MailAdresse: $('#E_MailAdresse').val, passWord: $('#passWord').val, passWord2: $('#passWord2')},
+					success:function(result){$('#output').html(result);}
+				});
+			}
 		
-		$(document).ready(
-        	$("#btnUserInfo").click(
-          	function(e){
-            	e.preventDefault();
-            	checkEingaben();
-            	return false;
+        		$("#btnUserInfo").click(
+          			function(e){
+            				e.preventDefault();
+            				checkEingaben();
+            				return false;
+          			}
+			);
+			
+          		
 		</script>
 	</head>
 
@@ -31,28 +37,29 @@
                         <li><a href="login.php">Login</a></li>
                         <li><a class="active" href="register.php">Register</a></li>
                 </ul>
+                
+                <div class="banner">
+                        <h3>Registrieren</h3>  
+                </div>
 	
-		<div id="pwDiv" class="horizontalAndVerticalCentered">
+		<div id="pwDiv" class="horizontalAndVerticalCenteredBig">
 		
 			<form action="registerProc.php">
-	      		Username:<br>
-		      	<input type="text" name="userName" id="userName">
-		      	<br>
-		      	E-Mailadresse:<br>
-		      	<input type="text" name="E_MailAdresse" id="E_MailAdresse">
-		      	<br>
-      			Password:<br>
-     		 	<input type="password" name="passWord" id="passWord">
-     		 	<br>
-     		 	Password bestaetigen: <br>
-     		 	<input type="password" name="passWord2" id="passWord2">
+	      		        <br>
+		        	<input id="logInput" type="text" placeholder="Username" name="userName" id="userName">
+		        	<br>
+		        	<input id="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
+		        	<br>
+     		        	<input id="logInput" type="password" placeholder="Password" name="passWord" id="passWord">
+     		        	<br>
+     		        	<input id="logInput" type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
 			
-			
-    		</form>
-  		<br>
-		<a class="buttonBlue" id="btnUserInfo"  href="#" onclick="checkEingaben();return false;">Register</a>
-		<a class="buttonBlue" href="login.php">Log In </a> 
-		<div id="output" style="width:200px;30px">
+  		        <br>
+		        <a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+		        <a class="buttonBlueRight" href="login.php">Login</a> 
+		        <div id="output" style="width:200px;30px">
+		        </div>
+		        </form>
 		</div>
 	</body>
 </html>
