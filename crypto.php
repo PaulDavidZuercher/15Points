@@ -1,28 +1,31 @@
 <?php
-echo ("working");
 generateRandomprimeNumbers();
 echo ("finished");
 
 function generateRandomprimeNumbers()
 {
-  $randomNumber = mt_rand (0, PHP_INT_MAX);
+  $maxGenInt = 200;
+  $randomNumber = mt_rand (0, maxGenInt);
   $aOPP[] = array();//Array Of Probbable primes 
-  echo ("test1");
-  for($i = 0; $i < PHP_INT_MAX; $i++);
+  for($i = 0; $i < $maxGenInt; $i++);
   {
-    $aOPP[] = true;
+	echo("working: maxGenInt Progress:  $i from $maxGenInt");
+	$aOPP[] = true;
   }
   echo ("test2");
+  
   for($indexOfNumber = 2; $indexOfNumber < count($aOPP); $indexOfNumber++)
   {
-    if($aOPP[$indexOfNumber])
+    /*if($aOPP[$indexOfNumber])
     {
-       $number = $indexOfNumber +1;
-       while($number < count($aOPP)){
-         $aOPP[$number-1] =false;
-         $number = $number + ($indexOfNumber +1);
-       }
-    }
+	echo("removing: " .(indexOfNumber +1));
+	$number = $indexOfNumber +1;
+	while($number < count($aOPP))
+        {
+		$aOPP[$number-1] =false;
+		$number = $number + ($indexOfNumber +1);
+        }
+    }*/
   }
   echo ("test3");
   $pimes[] = array();
