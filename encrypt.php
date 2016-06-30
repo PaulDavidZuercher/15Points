@@ -1,7 +1,7 @@
 <?php
-//n : 58339
-//phi: 57856   e: 61   d: 0.016393442622951
-encrypt("ABC", 61, 58339);
+//n : 45091
+//  e: 47   d: 0.021276595744681
+encrypt("ABC", 47, 45091);
 function encrypt ( $txt, $puK, $n )
 {
   $e = $puK;
