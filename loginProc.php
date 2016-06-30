@@ -7,7 +7,7 @@
   {
     $userName = $mysqli->real_escape_string($_POST["userName"]);
     $passWord = $mysqli->real_escape_string($_POST["passWord"]);
-    
+    echo ("Username: '$userName', PassWord '$passWoed'"); 
     if($res = $mysqli->query("Select * from user where userName = '$userName' && passWord = '$passWord'"))
     {
       if($res->num_rows > 0){
