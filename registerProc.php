@@ -23,7 +23,7 @@ if($ergebnis->fetch_row())
 	exit();
 }
 
-$mysqli->query("INSERT INTO user (userName, passWord, E-MailAdresse, accountCreation) VALUES ('$userName', '$passWord', '$E_MailAdresse', '$accountCreation')");
+$mysqli->query("INSERT INTO user (userName, passWord, email, reg_date) VALUES ('$userName', '$passWord', '$E_MailAdresse', '$accountCreation')");
 
  echo "Regestrierung abgeschloßen. Willkommen ('$userName').";
 ?>
