@@ -6,6 +6,7 @@
     
       
       function checkUserPass(){ 
+	alert("Func call checkUserPass");
         $.ajax({
           type: "POST",
           url: "/loginProc.php",
