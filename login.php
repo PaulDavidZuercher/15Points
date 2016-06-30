@@ -68,11 +68,15 @@ $(document).ready(function(){
 			
         		<div id="output" style="width:200px;30px">
         		</div>
-        		
-        		<a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
-        		<a class="buttonBlueRight" href="register.php">Register</a>
+        	
       		
       		</div>
+      		
+      		<div class="buttonBox">
+      		<a id="btnUserInfo" class="buttonHome">Login</a> 
+        	<a class="buttonHome" href="register.php">Register</a>
+        	</div>
+        	
       	</form>
     </div>
   </body>
