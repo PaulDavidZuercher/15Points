@@ -9,9 +9,9 @@
 			//gibt form werte zur registerProc.php weiter
 			function checkEingaben()
 			{
-				alert("Working")
+				alert("Working");
   				$.post("registerProc.php",
-					data: {'userName': $("#userName").val, 'E_MailAdresse': $("#E_MailAdresse").val, 'passWord': $("#passWord").val, function(result){$('#output').html(result);});
+					data: {'userName': $("#userName").val(), 'E_MailAdresse': $("#E_MailAdresse").val(), 'passWord': $("#passWord").val(), function(result){$('#output').html(result);});
 			}
 		
         		$("#btnUserInfo").click(
