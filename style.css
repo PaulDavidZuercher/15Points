@@ -4,6 +4,7 @@ body {
 
 a {
     	font-family: Arial, Helvetica, sans-serif;
+    	  text-align: center;
 }
 
 h3 {
@@ -61,6 +62,16 @@ form{
   
   top: 100%;
   left: 45%;
+}
+
+.textDiv{
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  text-align: center;
+  
+  top: 30%;
+  left: 20%;
 }
 
 .banner{
