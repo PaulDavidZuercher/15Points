@@ -43,21 +43,25 @@ $(document).ready(function(){
     </div>
     
     <div class="wrapperLogin">
-    	<div class="boxLogin">
-		<form>
-			Username:<br>
-			<input type="text" name="userName" placeholder="Username"  id="userName">
-        		<br>
-        		Password:
-        		<br>
-			<input type="password" name="passWord" placeholder="Password" id="passWord">
-        		<br> <br>
+    	<form>
+    		<div class="boxLogin">
+		
+			<div class="inputDiv">
+				<input <input class="logInput" type="text" name="userName" placeholder="Username"  id="userName">
+			</div>
+			
+			<div class="inputDiv">
+				<input class="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
+			</div>
+			
+			
         		<a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
         		<a class="buttonBlueRight" href="register.php">Register</a>
         		<div id="output" style="width:200px;30px">
         		</div>
-      		</form>
-      	</div>
+      		
+      		</div>
+      	</form>
     </div>
   </body>
 </html>
