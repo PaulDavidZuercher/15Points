@@ -1,4 +1,5 @@
 <?php
+echo("Version 0.1");
 generateRandomprimeNumbers();
 echo ("finished");
 
