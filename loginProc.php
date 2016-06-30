@@ -2,6 +2,7 @@
   session_start();
   include 'sqlConnect.php';
   
+  //checkt username mit pw in mysql datenbank existieren --> öffenet index oder gibt fehlercode aus
   if(!empty($_POST))
   {
     $userName = $_POST["userName"];
