@@ -24,10 +24,10 @@ function generateRandomprimeNumbers()
 	$number = $indexOfNumber +1;
 	while($number < count($aOPP))
         {
-		echo nl2br("removing: " .($number - 1). "\n");
+		echo nl2br("removing: " .($number). "\n");
 		
 		$aOPP[$number-1] =false;
-		$number = $number + ($indexOfNumber );
+		$number = $number + ($indexOfNumber);
 	}
     }
   }
