@@ -228,7 +228,7 @@ li a:hover:not(.active) {
     border: 2px solid #008CBA;
     color: white;
     text-align: center;
-    font-size: 16px;
+    display: inline-block;
     transition-duration: 0.3s;
     cursor: pointer;
     width: 50%;
