@@ -8,8 +8,8 @@
         alert("called :)");
         $.post("loginProc.php", 
 	{
-		userName : "test", 
-		passWord : "1234"
+		'userName' : "test", 
+		'passWord' : "1234"
 	},
 	function(data,status)
 	{
