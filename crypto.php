@@ -39,8 +39,8 @@ function generateRandomprimeNumbers()
   {
     if($aOPP[$i])
     {
-      $primes[] = $aOPP[$i];
-      echo nl2br("Prime: {($i+1)} \n");
+      $primes[] = $i +1; #Primenumber = index + 1 
+      echo nl2br("Prime: ${($i+1} \n");
     }
   }
 }
