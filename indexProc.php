@@ -7,7 +7,7 @@
         die("<html> <head> <title> Error 1234 </title> </head><body> <h1> Please Login first </h1> </body> </html>");
     }
     
-    $cre_date = new DateTime('now', new DateTimeZone('EUROPE'));
+    $cre_date = new DateTime('now', new DateTimeZone('Europe/London'));
     $SetorGet = $_POST["SetOrGet"];
     if($_POST["userName"] != $_SESSION["userName"])
     {
