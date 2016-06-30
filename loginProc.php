@@ -2,7 +2,7 @@
   session_start();
   include 'sqlConnect.php';
   
-  if(!empty($_POST)
+  if(!empty($_POST))
   {
     $userName = $_POST["userName"];
     $mysqli->prepare("Select * from user where userName = ? && passWord = ?");
