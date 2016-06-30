@@ -21,6 +21,15 @@ form{
 	color: white;
 }
 
+.wrapper{
+  width: 60%;
+  height: 434px;
+  
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
 .tableDiv{
   width: 60%;
   height: 400px;
