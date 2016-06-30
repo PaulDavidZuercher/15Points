@@ -12,6 +12,7 @@
     {
       if($res->num_rows > 0)
       {
+	$_SESSION["login"] = true;
         die("<script type=\"text/javascript\"> window.location = \"/index.php\"; </script>" );
         exit();
       }
