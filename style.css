@@ -31,12 +31,12 @@ form{
 }
 
 .wrapperLogin{
-  width: 60%;
+  width: 30%;
   height: 60%;
   
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 35%;
 }
 
 .wrapperRegister{
