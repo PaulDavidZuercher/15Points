@@ -38,22 +38,26 @@
       		<li><a href="register.php">Register</a></li>
 	</ul>
 	
-	<div class="tableDiv">
-	</div>	
+	<div class="wrapper">
 	
-	<form>
-		<div class="AddDiv">
-			<div class="miniDiv">
-				<input id="logInput" type="text" name="userName" placeholder="Name" id="Name">
+		<div class="tableDiv">
+		</div>	
+	
+		<form>
+			<div class="AddDiv">
+				<div class="miniDiv">
+					<input id="logInput" type="text" name="userName" placeholder="Name" id="Name">
+				</div>
+				<div class="miniDiv">
+					<input id="logInput" type="text" name="userName" placeholder="Username" id="userName">
+				</div>
+				<div class="miniDiv">
+					<input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
+				</div>	
 			</div>
-			<div class="miniDiv">
-				<input id="logInput" type="text" name="userName" placeholder="Username" id="userName">
-			</div>
-			<div class="miniDiv">
-				<input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
-			</div>	
-		</div>
 	</form>
+	
+	</div>
 	
 </body> 
 </html>
