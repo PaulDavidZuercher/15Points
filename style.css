@@ -74,6 +74,12 @@ form{
   position: absolute;
 }
 
+.placeHoder.inputDiv{
+  width: 100%;
+  height: 10%;
+  
+}
+
 .miniDiv{
   width: 33%;
   height: 34px;
@@ -94,8 +100,6 @@ form{
 .inputDiv{
   width: 100%;
   height: 10%;
-  
-  top: 15%;
 }
 
 .textDiv{
