@@ -33,6 +33,7 @@ form{
 .AddDiv{
   width: 60%;
   height: 34px;
+  float: initial;
   
   position: absolute;
   left: 20%;
