@@ -40,7 +40,7 @@ function generateRandomprimeNumbers()
     if($aOPP[$i])
     {
       $primes[] = $aOPP[$i];
-      echo($aOPP[$i]);
+      echo nl2br("Prime : " . $aOPP[$i]);
     }
   }
 }
