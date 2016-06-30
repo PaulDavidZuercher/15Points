@@ -57,7 +57,14 @@ form{
 	height: 50%;
 }
 
-.buttonBox
+.buttonBox{
+	width: 60%;
+	height: 10%;
+	
+	top: 100%;
+	left 20%
+	
+}
 
 .tableDiv{
   width: 100%;
