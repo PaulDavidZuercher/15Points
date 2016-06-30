@@ -1,6 +1,6 @@
 <?php
 if($_GET["Version"] == "true")
-	echo("Version 0.1");
+	echo("Version 0.1001");
 
 generateRandomprimeNumbers();
 echo ("finished");
@@ -10,7 +10,7 @@ function generateRandomprimeNumbers()
   $maxGenInt = 200;
   $randomNumber = mt_rand (0, $maxGenInt);
   $aOPP = [];//Array Of Probbable primes 
-  for($i = 0; $i < $randomNumber; $i++);
+  for($i = 0; $i < $randomNumber; $i++)
   {
 	echo("working: maxGenInt Progress:  $i from $randomNumber");
 	$aOPP[] = true;
