@@ -10,8 +10,12 @@
 			function checkEingaben()
 			{
 				alert("Working");
+				var un = $('#userName').val();
+				var mail = $('#E_MailAdresse').val();
+				var pass = $('#passWord').val();
+
   				$.post("registerProc.php",
-				{'userName': $("#userName").val(), 'E_MailAdresse': $("#E_MailAdresse").val(), 'passWord': $("#passWord").val()}, 
+				{'userName': un, 'E_MailAdresse': mail, 'passWord': pass}, 
 				function(result){$('#output').html(result);});
 			}
 		
