@@ -16,9 +16,8 @@ function generateRandomprimeNumbers()
   
   for($indexOfNumber = 2; $indexOfNumber < count($aOPP); $indexOfNumber++)
   {
-    if($aOPP[$indexOfNumber])
     echo("working...")
-    if($aOPP["$indexOfNumber"])
+    if($aOPP[$indexOfNumber])
     {
 	/*echo("removing: " .(indexOfNumber +1));
 	$number = $indexOfNumber +1;
