@@ -10,8 +10,8 @@
         var un = $('#passWord').val;
         $.post("loginProc.php", 
 	{
-		'userName' : un, 
-		'passWord' : pw
+		'userName' : "test", 
+		'passWord' : "1234" 
 	},
 	function(data,status)
 	{
