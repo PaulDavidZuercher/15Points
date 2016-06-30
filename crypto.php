@@ -1,6 +1,6 @@
 <?php
 if($_GET["Debug"] == "true")
-	echo nl2br("Version 0.1011 \n");
+	echo nl2br("Version 0.1012 \n");
 
 generateRandomprimeNumbers();
 echo nl2br("finished \n");
@@ -40,7 +40,7 @@ function generateRandomprimeNumbers()
     if($aOPP[$i])
     {
       $primes[] = $aOPP[$i];
-      echo nl2br("Prime : " . $aOPP[$i]);
+      echo nl2br("Prime : " . $aOPP[$i]) . "\n";
     }
   }
 }
