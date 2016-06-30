@@ -14,7 +14,7 @@ function generateRandomprimeNumbers()
 	if($debug)
 		echo nl2br("Version 0.1014 \n");
 
-  $maxGenInt = 214745;
+  $maxGenInt = 2147483647;
   #todo add in debug mode randomNumber = maxGenInt
   $randomNumber = ($debug ? $maxGenInt : mt_rand (0, $maxGenInt));
   $aOPP = [];//Array Of Probbable primes 
