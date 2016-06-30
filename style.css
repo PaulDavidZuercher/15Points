@@ -35,8 +35,6 @@ form{
   background-color: gray;
   
   position: absolute;
-  top: 25%;
-  left: 20%;
 }
 
 .AddDiv{
@@ -44,8 +42,6 @@ form{
   float: initial;
   
   position: absolute;
-  left: 20%;
-  top: 80%;
 }
 
 .miniDiv{
