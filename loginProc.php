@@ -22,7 +22,7 @@
         
       }
       else{
-          echo("Query Error" . $mysqli->connect_errno());
+          echo("Query Error" . $stmt->error);
       }
       
       echo("<p> invalid Username/Password Combination </p>");
