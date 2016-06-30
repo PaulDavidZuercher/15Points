@@ -27,7 +27,7 @@
       }
     
       echo("<p> invalid Username/Password Combination </p>");
-	*/
     }
+*/
   }
 ?>
