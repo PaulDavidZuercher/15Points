@@ -233,6 +233,7 @@ li a:hover:not(.active) {
     width: 100%;
     height: 100%;
     margin: -11px -11px;
+    float: left;
 }
 
 .buttonHome:hover {
