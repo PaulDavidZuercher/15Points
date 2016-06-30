@@ -58,9 +58,6 @@
 			
 			<div class="buttonDiv">
 				<a class="buttonHome"></a>
-				<div class="textDiv">
-					<a>Save</a>	
-				</div>
 			</div>	
 			
 		</form>
