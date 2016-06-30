@@ -6,8 +6,8 @@
     
       function checkUserPass(){ 
         alert("called :)");
-        var pw = $('#userName').val();
-        var un = $('#passWord').val();
+        var un = $('#userName').val();
+        var pw = $('#passWord').val();
         $.post("loginProc.php", 
 	{
 		'userName' : un, 
