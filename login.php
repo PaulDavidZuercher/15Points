@@ -41,20 +41,22 @@ $(document).ready(function(){
       <h3>Login</h3>  
     </div>
     
-    <div id="pwDiv" class="horizontalAndVerticalCentered">
-      <form>
-        Username:<br>
-        <input type="text" name="userName" placeholder="Username"  id="userName">
-        <br>
-        Password:
-        <br>
-        <input type="password" name="passWord" placeholder="Password" id="passWord">
-        <br> <br>
-        <a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
-        <a class="buttonBlueRight" href="register.php">Register</a>
-        <div id="output" style="width:200px;30px">
-        </div>
-      </form>
+    <div class="wrapperLogin">
+    	<div class="boxLogin">
+		<form>
+			Username:<br>
+			<input type="text" name="userName" placeholder="Username"  id="userName">
+        		<br>
+        		Password:
+        		<br>
+			<input type="password" name="passWord" placeholder="Password" id="passWord">
+        		<br> <br>
+        		<a id="btnUserInfo" class="buttonBlueLeft">Login</a> 
+        		<a class="buttonBlueRight" href="register.php">Register</a>
+        		<div id="output" style="width:200px;30px">
+        		</div>
+      		</form>
+      	</div>
     </div>
   </body>
 </html>
