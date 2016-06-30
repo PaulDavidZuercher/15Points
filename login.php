@@ -6,7 +6,15 @@
     
       function checkUserPass(){ 
         alert("called :)");
-        $.post("loginProc.php", {userName : "test", passWord : "1234"}, function(data,status){alert("Data: " . data . "\n Status : " . status)});
+        $.post("loginProc.php", 
+	{
+		userName : "test", 
+		passWord : "1234"
+	},
+	function(data,status)
+	{
+		alert("Data: " . data . "\n Status : " . status)
+	});
        <?php /*$.ajax({
           type: "POST",
           url: "/loginProc.php",
