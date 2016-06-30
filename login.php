@@ -6,13 +6,14 @@
     
       //gibt Useranme und password aus form weiter zur loginProc.php
       function checkUserPass(){ 
-	alert("Func call checkUserPass");
+        $.post("loginProc.php", {userName : "test", passWord : "1234"}, function(data,status){alert("Data: " . data . "\n Status : " . status)});
+/*	alert("Func call checkUserPass");
         $.ajax({
           type: "POST",
           url: "/loginProc.php",
           data: {userName: $("#userName").val, passWord: $("#passWord").val},
           success:function(result){$('#output').html(result)}
-      });
+      });*/
       }
       
 $(document).ready(function(){      
