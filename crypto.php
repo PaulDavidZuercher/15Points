@@ -1,5 +1,11 @@
 <?php
+$debug = false;
+
 if($_GET["Debug"] == "true")
+	$debug = true;
+
+
+if($debug)
 	echo nl2br("Version 0.1013 \n");
 
 generateRandomprimeNumbers();
@@ -8,7 +14,8 @@ echo nl2br("finished \n");
 function generateRandomprimeNumbers()
 {
   $maxGenInt = 214745;
-  $randomNumber = mt_rand (0, $maxGenInt);
+  #todo add in debug mode randomNumber = maxGenInt
+  $randomNumber = ($debug ?  mt_rand (0, $maxGenInt) : $maxGenInt);
   $aOPP = [];//Array Of Probbable primes 
   for($i = 0; $i < $randomNumber; $i++)
   {
