@@ -45,7 +45,7 @@
             
 			echo("</table>"); 
 			$mysqli->prepare("SELECT * FROM savedLoginData SLD, user U WHERE U.userName = SLD.userName AND U.userName = ?");
-			$mysqli->bind_param("s", $_POST["userName"])
+			$mysqli->bind_param("s", $_POST["userName"]);
 			$res = $stmt->execute();
 			break;        
 	}
