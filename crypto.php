@@ -6,7 +6,7 @@ if($_GET["Debug"] == "true")
 
 
 if($debug)
-	echo nl2br("Version 0.1013 \n");
+	echo nl2br("Version 0.1014 \n");
 
 generateRandomprimeNumbers();
 echo nl2br("finished \n");
