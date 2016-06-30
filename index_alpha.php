@@ -12,6 +12,7 @@
 	
 		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode um sie in die Datenbank zu speichern
 		{
+			alert("add to server")
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php", //Weiterleitung zur Datenbankanfrage
@@ -21,6 +22,7 @@
 		}
 		function addLoginDataToTable() 
 		{
+			alert("add to table");
 			$.ajax({
 				type: "POST",
 				url: "/indexProc.php",
@@ -28,7 +30,7 @@
 				success: function(result){$("#loginTable").html = result}
 			});
 		}
-		$(document).ready(function(){      
+		$(document).ready(function(){     
 		 	$("#btnUserInfo").click(
           		function(e){
         		e.preventDefault();
