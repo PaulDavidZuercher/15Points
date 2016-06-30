@@ -1,6 +1,6 @@
 <?php
 if($_GET["Debug"] == "true")
-	echo nl2br("Version 0.1007 \n");
+	echo nl2br("Version 0.1008 \n");
 
 generateRandomprimeNumbers();
 echo nl2br("finished \n");
@@ -21,12 +21,13 @@ function generateRandomprimeNumbers()
   {
     if($aOPP[$indexOfNumber])
     {
+	$buffNumInd = $indexOfNumber;
 	while( $indexOfNumber < count($aOPP))
         {
-		echo nl2br("removing: " .($indexOfNumber + 1). "\n");
+		$buffNumInd = $buffNumInd + ($indexOfNumber +1);
+		echo nl2br("removing: " .($buffNumInd + 1). "\n");
 		
-		$aOPP[$indexOfNumber] =false;
-		$number = $IndexOfNumber + ($indexOfNumber + 1);
+		$aOPP[$buffNumInd] =false;
 	}
     }
   }
