@@ -1,5 +1,7 @@
 <?php
-echo("Version 0.1");
+if($_GET["Version"] == "true")
+	echo("Version 0.1");
+
 generateRandomprimeNumbers();
 echo ("finished");
 
