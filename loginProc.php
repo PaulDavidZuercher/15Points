@@ -9,7 +9,7 @@
     $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
     if($res = $stmt->execute())
     {
-      if($res->num_rows > 0)
+      if($res && $res->num_rows > 0)
       {
         //user exists 
         $_SESSION["login"] = true;
