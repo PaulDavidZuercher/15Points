@@ -53,6 +53,15 @@ form{
   float: left;
 }
 
+.buttonDiv{
+  width: 10%;
+  height: 40px;
+  position: absolute;
+  
+  top: 85%;
+  left: 45%;
+}
+
 .banner{
   width: 80%;
   height: 100px;
