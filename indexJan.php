@@ -55,7 +55,12 @@
 					<input id="logInput" type="password" name="passWord" placeholder="Password" id="passWord">
 				</div>	
 			</div>
-	</form>
+			
+			<div class="buttonDiv">
+				<a class="buttonBlueRight">Save</a>
+			</div>	
+			
+		</form>
 	
 	</div>
 	
