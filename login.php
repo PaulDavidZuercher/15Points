@@ -17,7 +17,7 @@
 	{
 		$('#output').html(data);
 		alert(data);
-	},"json");
+	});
       }
       
 $(document).ready(function(){      
