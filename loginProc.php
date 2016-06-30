@@ -23,6 +23,10 @@
          echo("<script type=\"text/javascript\"> window.location = \"/index.php\"; </script>" );
          exit();
       }
+      else{
+        die ("failed to prepare statement");
+
+      }
     
       echo("<p> invalid Username/Password Combination </p>");
     }
