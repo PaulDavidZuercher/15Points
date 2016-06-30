@@ -9,8 +9,7 @@
     if( $stmt =$mysqli->prepare("Select * from user where userName = ? && passWord = ?")){
     $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
     $stmt->execute();
-    $stmt->bind_result($res);
-    $stmt->fetch(); 
+    $res = $stmt->get_result();
       if($res->num_rows > 0)
       {
         //user exists 
