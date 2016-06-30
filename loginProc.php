@@ -7,6 +7,7 @@
   {
     $userName = $_POST["userName"];
     if($stmt =$mysqli->prepare("Select * from user where userName = ? && passWord = ?")){
+      echo("userName:  {$_POST["userName"]}, pasWordi: {$_POST["passWord"]}")
       $stmt->bind_param("ss", $_POST["userName"], $_POST["passWord"] );
       $stmt->execute();
       $res = $stmt->get_result();
