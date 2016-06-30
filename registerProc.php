@@ -6,8 +6,7 @@ echo("test");
 $userName = $_POST["userName"];
 $E_MailAdresse = $_POST["E_MailAdresse"];
 $passWord = $_POST["passWord"];
-$passWord2 = $_POST["passWord2"]; 
-$accountCreation = new DateTime('now', new DateTimeZone('EUROPE'));
+$accountCreation = new DateTime('now', new DateTimeZone('Europe/London'));
 
  
 if($passWord != $passWord2) {
