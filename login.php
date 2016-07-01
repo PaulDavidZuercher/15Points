@@ -73,8 +73,8 @@ $(document).ready(function(){
       		</div>
       		
       		<div class="buttonBox">
-      		<a id="btnUserInfo" class="buttonHome">Login</a> 
-        	<a class="buttonHome" href="register.php">Register</a>
+      		<a id="btnUserInfo" class="buttonLogin">Login</a> 
+        	<a class="buttonLogin" href="register.php">Register</a>
         	</div>
         	
       	</form>
