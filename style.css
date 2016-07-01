@@ -235,7 +235,7 @@ li a:hover:not(.active) {
     display: inline-block;
     transition-duration: 0.3s;
     cursor: pointer;
-    width: 40%;
+    width: 37%;
     height: 100%;
     float: left;
 }
