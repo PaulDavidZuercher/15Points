@@ -72,7 +72,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			</div>
 			
 			<div class="buttonDiv">
-				<a class="buttonHome">Save</a>
+				<a class="button_example">Save</a>
 			</div>	
 			
 		</form>
