@@ -74,7 +74,7 @@ $(document).ready(function(){
       		
       		<div class="buttonBox">
       		<a id="btnUserInfo" class="buttonLogin">Login</a> 
-        	<a class="buttonLoginRight" href="register.php">Register</a>
+        	<a class="buttonLogin" href="register.php">Register</a>
         	</div>
         	
       	</form>
