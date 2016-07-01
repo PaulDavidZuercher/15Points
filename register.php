@@ -69,10 +69,8 @@
      		        	</div>
      		        	
      		        	<div class="buttonBox">
-      					<a class="buttonLogin" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
-        				<a class="buttonLogin" href="login.php">Login</a>	
-        				<div id="output" style="width:200px;30px">
-		        		</div>
+      					<a class="button_example" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+
         			</div>
      			</form>	
      		</div>      	
