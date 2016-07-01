@@ -7,7 +7,7 @@ $E_MailAdresse = $_POST["E_MailAdresse"];
 $passWord = $_POST["passWord"];
 $accountCreation = new DateTime('now', new DateTimeZone('Europe/London'));
 
-$ergebnis = $mysqli->query("SELECT userName FROM user WHERE userName = '".mysql_real_escape_string('$userName')."' ");
+$ergebnis = $mysqli->query("SELECT userName FROM user WHERE userName = '". $mysqli->real_escape_string('$userName')."' ");
 
 if($ergebnis->fetch_row())
 {
