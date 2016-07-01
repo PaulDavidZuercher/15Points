@@ -29,7 +29,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			$.post(
 				"indexProc.php",
 				{'SetOrGet': 2},
-				function(result, status){$("#passwordView").html(result);}
+				function(result, status){$("#tableDiv").html(result);}
 			);
 		}
 		
