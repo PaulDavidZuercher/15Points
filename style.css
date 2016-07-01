@@ -66,6 +66,14 @@ form{
 	height: 50%;
 }
 
+.buttonBoxLogin{
+	width: 20%;
+	height: 13%;
+	
+	margin-top: 10%;
+	margin-left: 30%;
+}
+
 .buttonBox{
 	width: 20%;
 	height: 13%;
