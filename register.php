@@ -43,25 +43,38 @@
                 <div class="banner">
                         <h3>Registrieren</h3>  
                 </div>
-	
-		<div id="pwDiv" class="horizontalAndVerticalCenteredBig">
-		
-			<form action="registerProc.php">
-	      		        <br>
-		        	<input  type="text" placeholder="Username" name="userName" id="userName">
-		        	<br>
-		        	<input  type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
-		        	<br>
-     		        	<input  type="password" placeholder="Password" name="passWord" id="passWord">
-     		        	<br>
-     		        	<input  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
-			
-  		        <br>
-		        <a class="buttonBlueLeft" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
-		        <a class="buttonBlueRight" href="login.php">Login</a> 
-		        <div id="output" style="width:200px;30px">
-		        </div>
-		        </form>
-		</div>
+                
+                <div class="wrapperRegister">
+                	<form action="registerProc.php">
+				<div class="boxRegister">
+					
+					<div class="placeHolder"></div>
+					<div class="placeHolder"></div>
+				
+					<div class="inputDiv">
+						<input class="logInput2" type="text" placeholder="Username" name="userName" id="userName">
+					</div>
+				
+					<div class="inputDiv">
+				   		<input  class="logInput2" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
+				  	</div>
+		        	
+		        		<div class="inputDiv">
+		        			<input class="logInput2"  type="password" placeholder="Password" name="passWord" id="passWord">
+		        		</div>
+		        	
+		        		<div class="inputDiv">
+     		        			<input class="logInput2"  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
+     		        		</div>
+     		        	</div>
+     		        	
+     		        	<div class="buttonBox">
+      					<a class="buttonLogin" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+        				<a class="buttonLogin" href="login.php">Login</a>	
+        				<div id="output" style="width:200px;30px">
+		        		</div>
+        			</div>
+     			</form>	
+     		</div>      	
 	</body>
 </html>
