@@ -69,8 +69,8 @@
      		        	</div>
      		        	
      		        	<div class="buttonBox">
-      					<a class="buttonHome" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
-        				<a class="buttonHome" href="login.php">Login</a>	
+      					<a class="buttonLogin" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
+        				<a class="buttonLogin" href="login.php">Login</a>	
         				<div id="output" style="width:200px;30px">
 		        		</div>
         			</div>
