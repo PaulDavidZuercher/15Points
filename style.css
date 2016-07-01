@@ -233,12 +233,30 @@ li a:hover:not(.active) {
     color: white;
     transition-duration: 0.3s;
     cursor: pointer;
-    width: 49.5%;
+    width: 50%;
     height: 100%;
     float: left;
 }
 
 .buttonLogin:hover {
+    text-align: center;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.buttonLoginRight {
+    background-color: #008CBA;
+    border: 2px solid #008CBA;
+    color: white;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    float: Right;
+}
+
+.buttonLoginRight:hover {
     text-align: center;
     background-color: white; 
     color: black; 
