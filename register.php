@@ -52,19 +52,19 @@
 					<div class="placeHolder"></div>
 				
 					<div class="inputDiv">
-						<input class="logInput" type="text" placeholder="Username" name="userName" id="userName">
+						<input class="logInput2" type="text" placeholder="Username" name="userName" id="userName">
 					</div>
 				
 					<div class="inputDiv">
-				   		<input  class="logInput" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
+				   		<input  class="logInput2" type="text" placeholder="Email" name="E_MailAdresse" id="E_MailAdresse">
 				  	</div>
 		        	
 		        		<div class="inputDiv">
-		        			<input class="logInput"  type="password" placeholder="Password" name="passWord" id="passWord">
+		        			<input class="logInput2"  type="password" placeholder="Password" name="passWord" id="passWord">
 		        		</div>
 		        	
 		        		<div class="inputDiv">
-     		        			<input class="logInput"  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
+     		        			<input class="logInput2"  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
      		        		</div>
      		        	</div>
      		        	
