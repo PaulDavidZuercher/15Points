@@ -60,11 +60,11 @@
 				  	</div>
 		        	
 		        		<div class="inputDiv">
-		        			<input  type="password" placeholder="Password" name="passWord" id="passWord">
+		        			<input class="logInput"  type="password" placeholder="Password" name="passWord" id="passWord">
 		        		</div>
 		        	
 		        		<div class="inputDiv">
-     		        			<input  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
+     		        			<input class="logInput"  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
      		        		</div>
      		        	</div>
      		        	
