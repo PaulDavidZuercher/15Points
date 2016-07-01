@@ -74,12 +74,20 @@ form{
 	margin-left: 30%;
 }
 
-.buttonBox{
+.buttonBoxRegister{
 	width: 20%;
 	height: 13%;
 	
 	margin-top: 10%;
 	margin-left: 30%;
+}
+
+.buttonBoxHome{
+	width: 20%;
+	height: 13%;
+	
+	margin-top: 10%;
+	margin-left: 27%;
 }
 
 .tableDiv{
