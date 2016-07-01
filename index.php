@@ -15,25 +15,25 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 	
-		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode; sofortiges tabellarisches Wiederanzeigen 
+		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode; Weitergabe an indexProc.php
 		{
-			var name = $('#Name').val();
+			var name = $('#Name').val(); 
 			var userName = $('#userName').val();
 			var passWord = $('#passWord').val();
 
 			$.post("indexProc.php",{'SetOrGet': 1,'loginDataName' : name, 'userName' : userName, 'passWord' : passWord}, function (data, status){alert("result :" +data);});
 			
 		}
-		function addLoginDataToTable()
+		function addLoginDataToTable() //fügt soeben gespeicherte Daten der Tabelle hinzu
 		{
 			$.post(
 				"indexProc.php",
 				{'SetOrGet': 2},
-				function(result, status){$("#tableDiv").html(result);}
+				function(result, status){$("#tableDiv").html(result);} //zeigt Datensätze im div "tableDiv" an
 			);
 		}
 		
-		$(document).ready(function (){
+		$(document).ready(function (){ //bei Klick auf den Save Button wird die Methode aufgerufen
 			$(".buttonDiv").click(
 			function(e){
 			  e.preventDefault();
@@ -55,11 +55,11 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 	
 	<div class="wrapperHome">
 	
-		<div class="tableDiv">
+		<div class="tableDiv"> <!-- Anzeige div für Datensätze -->
 		</div>	
 	
 		<form>
-			<div class="AddDiv">
+			<div class="AddDiv"> <!-- Formular -->
 				<div class="miniDiv">
 					<input class="logInput" type="text" name="userName" placeholder="Name" id="Name">
 				</div>
