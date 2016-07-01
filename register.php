@@ -68,7 +68,7 @@
      		        		</div>
      		        	</div>
      		        	
-     		        	<div class="buttonBox">
+     		        	<div class="buttonBoxRegister">
       					<a class="button_example" id="btnUserInfo"  onclick="checkEingaben();return false;">Register</a>
 
         			</div>
