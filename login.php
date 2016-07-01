@@ -73,7 +73,7 @@ $(document).ready(function(){
       		</div>
       		
       		<div class="buttonBox">
-      		<a id="btnUserInfo" class="button_example">Login</a> 
+      		<a id="btnUserInfo" class="button_example">    Login    </a> 
         	</div>
         	
       	</form>
