@@ -12,7 +12,7 @@ if($res->num_rows > 0)
 	exit();
 }
 
-$res = $mysqli->query("INSERT INTO user (userName, passWord, email) VALUES ('$userName', '$passWord', '$E_MailAdresse'");
+$res = $mysqli->query("INSERT INTO user (userName, passWord, email) VALUES ('$userName', '$passWord', '$E_MailAdresse')");
 if (!$res)
 	die("Registration failed because querieing failed." . $mysqli->error);
 echo ("Regestrierung abgeschloßen. Willkommen ('$userName').");
