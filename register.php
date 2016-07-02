@@ -66,6 +66,8 @@
 		        		<div class="inputDiv">
      		        			<input class="logInput2"  type="password" placeholder="Password wiederholen" name="passWord2" id="passWord2">
      		        		</div>
+					<div id= "output">
+					</div>
      		        	</div>
      		        	
      		        	<div class="buttonBoxRegister">
