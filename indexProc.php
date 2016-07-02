@@ -11,7 +11,7 @@
     $SetorGet = $_POST["SetOrGet"];
     if($_POST["userName"] != $_SESSION["userName"])
     {
-        die("Try Not to Hack me m8 :)");
+        die("Try Not to Hack me m8 :){$_POST["userName"]} != {$_SESSION["userName"]}");
     }
     
     switch($SetorGet)
