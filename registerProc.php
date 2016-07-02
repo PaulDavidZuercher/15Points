@@ -1,10 +1,11 @@
 <?php 
 include 'sqlConnect.php';
 
-$userName = $_POST["userName"];
-$E_MailAdresse = $_POST["E_MailAdresse"];
-$passWord = $_POST["passWord"];
-$res = $mysqli->query("SELECT userName FROM user WHERE userName = '". $mysqli->real_escape_string('$userName')."' ");
+$userName = $mysqli->real_escape_string($_POST["userName"]);
+$E_MailAdresse = $mysqli->real_escape_string($_POST["E_MailAdresse"]);
+$passWord =$mysqli->real_escape_string($_POST["passWord"]);
+
+$res = $mysqli->query("SELECT * FROM user WHERE userName = '$userName'");
 
 if($res->num_rows > 0)
 {
@@ -12,8 +13,13 @@ if($res->num_rows > 0)
 	exit();
 }
 
-$res = $mysqli->query("INSERT INTO user (userName, passWord, email) VALUES ('$userName', '$passWord', '$E_MailAdresse')");
-if (!$res)
+$salt = $mysqli->real_escape_string(random_bytes(32));
+
+$res = $mysqli->query("INSERT INTO user (userName,salt, passWord, email) VALUES ('$userName', '$salt', MD5(CONCAT('$salt', ':', '$passWord')), '$E_MailAdresse')");
+
+if(!$res)
 	die("Registration failed because querieing failed." . $mysqli->error);
-echo ("Regestrierung abgeschloßen. Willkommen ('$userName').");
+
+
+echo ("Registration Succeed. Welcome  ('$userName').");
 ?>
