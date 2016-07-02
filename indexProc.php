@@ -14,10 +14,13 @@
         die("Try Not to Hack me m8 :){$_POST["userName"]} != {$_SESSION["userName"]}");
     }
     
-    switch($SetorGet)
+    switch($SetorGet) // Two way use: 1 as setting data 2 as getting data
 	{
 		case 1:
-            
+           		$userName = $_POST["userName"];
+			$foreignServiceName = $_POST["foreignUserName"];
+			$foreignServiceUserName = $_POST["foreignServiceUserName"];
+			$foreignServicePassWord = $_POST["foreignServicePassWord"];
 			$stmt = $mysqli->prepare("INSERT INTO savedLoginData (userName, loginDataName, passWord, cre_date) VALUES ('?', '?', '?', '?')");
 			$stmt->bind_param("ssss",$_POST["userName"], $_POST["loginDataName"], $_POST["passWord"], $cre_date);
 			if(!$stmt->execute())
@@ -28,7 +31,7 @@
 
 		case 2:
 			$stmt = $mysqli->prepare("Select * where userName = ?");
-         		$stmt->bind("?", $_SESSION["userName"]); 
+         		$stmt->bind("s", $_SESSION["userName"]); 
 			$stmt->execute();
 
 			echo("</table>");

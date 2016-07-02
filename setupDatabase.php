@@ -8,5 +8,9 @@ if(!$mysqli->query("Create Table savedLoginData (userName varchar(64) NOT NULL, 
 	die("Error" . $mysqli->error);
 ?>
 
+//same for new struct of user table
 
+//Drop old table if it exists
+
+//create new one with colmns ffrom README.md
 

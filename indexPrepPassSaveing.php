@@ -19,10 +19,11 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 
 		function addLoginDataToServer() //übernehmen der Daten aus dem Formular per POST Methode; Weitergabe an indexProc.php
 		{
-			var name = $('#Name').val(); 
-			var userName = $('#userName').val();
-			var passWord = $('#passWord').val();
-
+			var key = $('#key').val();
+			var name =CryptoJS.AES.encrypt($('#Name').val(), key); 
+			var userName = CryptoJS.AES.encrypt($('#userName').val(), key);
+			var passWord = CryptoJS.AES.encrypt($('#passWord').val(), key));
+				
 			$.post("indexProc.php",{'SetOrGet': 1,'loginDataName' : name, 'userName' : userName, 'passWord' : passWord}, function (data, status){alert("result :" +data);});
 			
 		}
