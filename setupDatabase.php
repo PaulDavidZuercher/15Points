@@ -1,5 +1,5 @@
 <?php
-include 'sqlConnect.php'
+include 'sqlConnect.php';
 
 if(!$mysqli->query("DROP TABLE IF EXISTS users"))
 	die("Error" . $mysqli->error);
