@@ -34,7 +34,7 @@
 	<body>
 		
 		<ul>
-                        <li><a href="http://144.76.65.253/">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="login.php">Login</a></li>
                         <li><a class="active" href="register.php">Register</a></li>
                         <li><a class="right" href="logout.php">Logout</a></li>
