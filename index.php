@@ -47,7 +47,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 
 <body>
 	<ul> <!--Homeleiste-->
-      		<li><a class="active" href="http://144.76.65.253/">Home</a></li> 
+      		<li><a class="active" href="index.php">Home</a></li> 
       		<li><a href="login.php">Login</a></li>
       		<li><a href="register.php">Register</a></li>
       		<li><a class="right" href="logout.php">Logout</a></li>
