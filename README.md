@@ -2,17 +2,17 @@
 
 - [x] Datenbank Strukturen:
   - [x] user(userName,passWord, email, reg_date)
-  - [x] savedLoginData(userName, loginDataName, passWord, cre_date)
+  - [x] savedLoginData(userName, foreignServiceName, foreignServiceUserName, foreignServicePassWord, creationTimeStamp)
   
-- [ ] Seitenstrukturen:
+- [x] Seitenstrukturen:
   - [x] login.php
     - [x] Ajax
     - [x] Front-End
-  - [ ] loginProc.php
-  - [ ] register.php
-    - [ ] Ajax
-    - [ ] Front-End
-  - [ ] registerProc.php
+  - [x] loginProc.php
+  - [x] register.php
+    - [x] Ajax
+    - [x] Front-End
+  - [x] registerProc.php
   - [ ] overView.php
     - [ ] Ajax
     - [ ] Front-End
