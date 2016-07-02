@@ -300,4 +300,6 @@ border:0px solid #004d66; -webkit-border-radius: 5px; -moz-border-radius: 5px;bo
  background-image: -o-linear-gradient(top, #0084B0, #00759C);
  background-image: linear-gradient(to bottom, #0084B0, #00759C);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#0084B0, endColorstr=#00759C);
 }
-
+#output{
+	color: red;
+}
