@@ -12,6 +12,8 @@ if($ergebnis->fetch_row())
 	exit();
 }
 
-$mysqli->query("INSERT INTO user (userName, passWord, email) VALUES ('$userName', '$passWord', '$E_MailAdresse'");
+$res = $mysqli->query("INSERT INTO user (userName, passWord, email) VALUES ('$userName', '$passWord', '$E_MailAdresse'");
+if (!res)
+	die("Registration failed because querieing failed." . $mysql->connect_error);
 echo ("Regestrierung abgeschloßen. Willkommen ('$userName').");
 ?>
