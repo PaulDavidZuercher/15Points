@@ -9,10 +9,17 @@
 			//gibt form werte zur registerProc.php weiter
 			function checkEingaben()
 			{
-				alert("Working");
+				$("#output").html("Processing...");
 				var un = $('#userName').val();
 				var mail = $('#E_MailAdresse').val();
 				var pass = $('#passWord').val();
+				var pass2 = $('#passWord').val();
+
+				if(password1 !== password2)
+				{
+					$('#output').html("Passwords don't match :/");
+					return false;
+				}					
 
   				$.post("registerProc.php",
 				{'userName': un, 'E_MailAdresse': mail, 'passWord': pass}, 
