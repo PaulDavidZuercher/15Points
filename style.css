@@ -21,6 +21,16 @@ form{
 	color: white;
 }
 
+.picDiv{
+	width: 30%;
+	height: 30%;
+	
+	top: 35%;
+	left: 35%;
+	
+	background-image: https://s3-us-west-2.amazonaws.com/ialandandhome.site.20140702/images/theme/login_icon.png;
+}
+
 .wrapperHome{
   width: 60%;
   height: 60%;
