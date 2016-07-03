@@ -54,6 +54,7 @@ $(document).ready(function(){
     		<div class="boxLogin">
     			
 			<div class="placeHolder"></div>
+			<div class"picDiv"></div>
 			<div class="placeHolder"></div>
 			
 			<div class="inputDiv">
