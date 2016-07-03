@@ -13,7 +13,6 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 	<title>Overview</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
 
 	<script type="text/javascript">
 
@@ -26,6 +25,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			$.post("indexProc.php",{'SetOrGet': 1, 'foreignServiceName' : name, 'foreignServiceUserName' : userName, 'foreignServicePassWord' : passWord}, function (data, status){alert("result :" +data);});
 			
 		}
+
 		function addLoginDataToTable() //fügt soeben gespeicherte Daten der Tabelle hinzu
 		{
 			$.post(
@@ -43,6 +43,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			  addLoginDataToTable();
 			  return false;
 			});
+			addLoginDataToTable();
 			});
 	</script>
 </head>
