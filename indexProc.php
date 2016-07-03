@@ -25,7 +25,7 @@
 
 		case 2:
            		$userName = $mysqli->real_escape_string($_SESSION["userName"]);
-			$res = $mysqli->query("SELECT * FROM savedLoginData WHERE userName = '$userName'");	
+			$res = $mysqli->query("SELECT * FROM savedLoginData WHERE userName = '$userName'");					
 
 			echo("<table>");
 			echo("<tr> <th>Website</th> <th> Username </th> <th> Password </th> <th> Data Created</th> </tr>"); 
@@ -36,7 +36,9 @@
 				echo ("<td>" . $row["foreignServiceName"] . "</td>");
 				echo ("<td>" . $row["foreignServiceUserName"] . "</td>");
 				echo ("<td>" . $row["foreignServicePassWord"]  . "</td>");
-				echo ("<td>" . $row["creationTimeStamp"] . "</td>");
+				
+				$daysdiff = abs(strtotime($row["creationTimeStamp"]) - strtotime(date("Y-m-d H:i:s")));
+				echo ("<td>" . $daysdiff. "</td>");
 				echo ("</tr>"); 
 			}
             
