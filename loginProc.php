@@ -10,7 +10,7 @@
 
     echo ("Username: '$userName', PassWord '$passWord'"); 
 
-    if($res = $mysqli->query("Select * from user where userName = '$userName' && passWord= MD5( CONCAT(salt, ':', '$passWord'))") 
+    if($res = $mysqli->query("Select * from user where userName = '$userName' && passWord= MD5( CONCAT(salt, ':', '$passWord'))"))
     {
       if($res->num_rows > 0)
       {
