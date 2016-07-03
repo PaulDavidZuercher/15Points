@@ -30,7 +30,7 @@
 			echo("<table>");
 			echo("<tr> <th>Website</th> <th> Username </th> <th> Password </th> <th> Data Created</th> </tr>"); 
 
-			while($row = $res->mysqli_fetch_array())
+			while($row = $res->fetch_array())
     			{
 				echo ("<tr>");
 				echo ("<td>" . $row["foreignServiceName"] . "</td>");
