@@ -2,8 +2,8 @@
 
 
 generateKeys();
-encrypt("ABC", , ); //Werte per Hand eingeben
-decrypt("", , );
+encrypt("ABC", , ); //Werte per Hand eingeben; 1.Stelle: zuverschlüsselnde Zeichenkette; 2.Stelle: $d; 3.Stelle: $n
+decrypt("", , ); //1.Stelle: verschlüsselter String; 2.Stelle: $d; 3.Stelle: $n
 
 function generateKeys() {
 $zufallszahl = rand(2,1000);
