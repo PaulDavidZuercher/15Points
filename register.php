@@ -22,7 +22,7 @@
 				}					
 
   				$.post("registerProc.php",
-				{'userName': un, 'E_MailAdresse': mail, 'passWord': pass}, 
+				{'userName': un, 'E_MailAdresse': mail, 'passWord': pass1}, 
 				function(result){$('#output').html(result);});
 			}
 		
