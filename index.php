@@ -57,7 +57,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 	
 	<div class="wrapperHome">
 	
-		<div class="tableDiv"> <!-- Anzeige div für Datensätze -->
+		<div id="tableDiv"> <!-- Anzeige div für Datensätze -->
 		</div>	
 	
 		<form>
