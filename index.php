@@ -45,6 +45,29 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			});
 			addLoginDataToTable();
 			});
+			
+		function ranString(len){
+			var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-#*?!§$%&";
+			var charLen = chars.length;
+
+			randStr = "";
+
+			for(var i=0; i < len; i++)
+			{
+		randStr += chars.charAt(Math.floor(Math.random() * charLen));
+			}
+        		return randStr;
+		}
+
+		function ranPass() {
+		  var k = prompt("Wie ist die gewünschte länge der Passwörter?");
+		  var a = ranString(k);
+		  var b = ranString(k);
+		  var c = ranString(k);
+		  var d = ranString(k);
+		  var e = ranString(k);
+		  alert(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f);
+		}
 	</script>
 </head>
 <body>
@@ -76,6 +99,8 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			<div class="buttonDiv">
 				<a class="button_example">Save</a>
 			</div>	
+			
+			<button class="button_example" onclick="ranPass()">Random Passwords</button>
 			
 		</form>
 	
