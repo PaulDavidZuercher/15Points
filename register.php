@@ -12,10 +12,10 @@
 				$("#output").html("Processing...");
 				var un = $('#userName').val();
 				var mail = $('#E_MailAdresse').val();
-				var pass = $('#passWord').val();
-				var pass2 = $('#passWord').val();
+				var pass1 = $('#passWord1').val();
+				var pass2 = $('#passWord2').val();
 
-				if(password1 !== password2)
+				if(pass1 !== pass2)
 				{
 					$('#output').html("Passwords don't match :/");
 					return false;
@@ -67,7 +67,7 @@
 				  	</div>
 		        	
 		        		<div class="inputDiv">
-		        			<input class="logInput2"  type="password" placeholder="Password" name="passWord" id="passWord">
+		        			<input class="logInput2"  type="password" placeholder="Password" name="passWord" id="passWord1">
 		        		</div>
 		        	
 		        		<div class="inputDiv">
