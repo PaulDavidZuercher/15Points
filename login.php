@@ -55,7 +55,7 @@ $(document).ready(function(){
     			
 			<div class="placeHolder"></div>
 			<div class="placeHolder"></div>
-			<div class="placeHolder"></div>
+			
 			
 			<div class="inputDiv">
 				<input <input class="logInput" type="text" name="userName" placeholder="Username"  id="userName">
