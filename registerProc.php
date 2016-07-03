@@ -13,7 +13,7 @@ if($res->num_rows > 0)
 	exit();
 }
 
-$salt = $mysqli->real_escape_string(random_bytes(32));
+$salt = generateRandomString(64);
 
 $res = $mysqli->query("INSERT INTO user (userName,salt, passWord, email) VALUES ('$userName', '$salt', MD5(CONCAT('$salt', ':', '$passWord')), '$E_MailAdresse')");
 
@@ -22,4 +22,16 @@ if(!$res)
 
 
 echo ("Registration Succeed. Welcome  ('$userName').");
+
+
+function generateRandomString($length = 10) {
+    $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charLen = strlen($chars);
+    $ranStr = "";
+    for ($i = 0; $i < $length; $i++) {
+        $ranStr .= $chars[rand(0, $charLen - 1)];
+    }
+    return $ranStr;
+}
+
 ?>
