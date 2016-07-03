@@ -2,6 +2,9 @@
 
 
 generateKeys();
+encrypt("ABC", , ); //Werte per Hand eingeben
+decrypt("", , );
+
 function generateKeys() {
 $zufallszahl = rand(2,1000);
 $i = $zufallszahl-1;
@@ -66,8 +69,6 @@ echo "n : " . $n . "\n";
 
 
 $phi = ($p-1)*($q-1);
-//unset($p);
-//unset($q);
 echo "phi: " . $phi;
 
 $primarray = array(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97);
@@ -104,7 +105,8 @@ function invmod($a,$b) {
   }
 
 $d = invmod($e,$phi);
-
+unset($p); // aus p und q könnte man die anderen Variablen errechnen
+unset($q);
 echo "   e: " . $e;
 echo "   d: " . $d . " ";
 echo ($e*$d) % $phi;
@@ -114,8 +116,6 @@ return $d;
 } // Ende generateKeys
 
 
-
-encrypt("ABC", $e, $n);
 function encrypt ( $txt, $puK, $n )
 {
   $e = $puK;
@@ -178,10 +178,6 @@ return $encryptedTxtString; //Rückgabe des verschlüsselten $txt-Passworts
 } //Ende encrypt
 
 
-//n : 45091
-//  e: 47   d: 0.021276595744681
-
-decrypt("1 21873 24678 0", 0.021276595744681, 45091);
 function decrypt($txt, $prK, $n)
 {
   $e = $prK;
