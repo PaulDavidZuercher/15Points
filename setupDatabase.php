@@ -11,7 +11,7 @@ if(!$mysqli->query("Create Table user (userName varchar (64) NOT NULL, passWord 
 	die("Error 3: " . $mysqli->error);
 
 
-if(!$mysqli->query("Create Table savedLoginData (userName varchar(64) NOT NULL, foreignServiceName varchar(64) NOT NULL, foreignServiceUserName varchar(64) NOT NULL, foreignServicePassWord varchar(64) NOT NULL, creationTimeStamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (userName) REFERENCES user(userName), PRIMARY KEY (userName));"))
+if(!$mysqli->query("Create Table savedLoginData (userName varchar(64) NOT NULL, foreignServiceName varchar(64) NOT NULL, foreignServiceUserName varchar(64) NOT NULL, foreignServicePassWord varchar(64) NOT NULL, creationTimeStamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (userName) REFERENCES user(userName), PRIMARY KEY (userName,foreignServiceName, foreignServiceUserName));"))
 	die("Error 4: " . $mysqli->error);
 
 
