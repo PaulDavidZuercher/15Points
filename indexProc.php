@@ -24,7 +24,7 @@
 			break;
 
 		case 2:
-			$res = $mysqli->query("SELECT * FROM savedLoginData WHERE userName = '{$_POST["userName"]}'");	
+			$res = $mysqli->query("SELECT * FROM savedLoginData WHERE userName = '$userName'");	
 
 			echo("<table>");
 			echo("<tr> <th>Website</th> <th> Username </th> <th> Password </th> <th> Data Created</th> </tr>"); 
