@@ -24,6 +24,7 @@
 			break;
 
 		case 2:
+           		$userName = $mysqli->real_escape_string($_SESSION["userName"]);
 			$res = $mysqli->query("SELECT * FROM savedLoginData WHERE userName = '$userName'");	
 
 			echo("<table>");
