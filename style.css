@@ -1,4 +1,4 @@
-body {
+bgcolorbody {
     background-color: white;
 }
 
@@ -31,11 +31,11 @@ table, th, td {
 }
 
 th{
-	bgcolor: #32CD32;
+	background-color: #32CD32;
 }
 
 td{
-	bgcolor: #F5F5F5;
+	background-color: #F5F5F5;
 }
 
 .picDiv{
