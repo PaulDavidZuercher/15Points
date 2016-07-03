@@ -23,7 +23,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			var userName = $('#userName').val();
 			var passWord = $('#passWord').val();
 
-			$.post("indexProc.php",{'SetOrGet': 1,'loginDataName' : name, 'userName' : userName, 'passWord' : passWord}, function (data, status){alert("result :" +data);});
+			$.post("indexProc.php",{'SetOrGet': 1, 'foreignServiceName' : name, 'foreignServiceUserName' : userName, 'foreignServicePassWord' : passWord}, function (data, status){alert("result :" +data);});
 			
 		}
 		function addLoginDataToTable() //fügt soeben gespeicherte Daten der Tabelle hinzu
