@@ -100,7 +100,9 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 				<a class="button_example">Save</a>
 			</div>	
 			
+			<div class="buttonDiv2">
 			<button class="button_example" onclick="ranPass()">Random Passwords</button>
+			</div>
 			
 		</form>
 	
