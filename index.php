@@ -66,7 +66,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 		  var c = ranString(k);
 		  var d = ranString(k);
 		  var e = ranString(k);
-		  alert(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f);
+		  alert(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e);
 		}
 	</script>
 </head>
