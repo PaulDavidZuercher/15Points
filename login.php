@@ -12,7 +12,7 @@ if($_SESSION["login"] && $_GET["debug"] != "true")
     <script type="text/javascript">
     
       function checkUserPass(){ 
-        alert("called :)");
+	$('#output').html("Processing");
         var un = $('#userName').val();
         var pw = $('#passWord').val();
         $.post("loginProc.php", 
@@ -23,7 +23,6 @@ if($_SESSION["login"] && $_GET["debug"] != "true")
 	function(data,status)
 	{
 		$('#output').html(data);
-		alert(data);
 	});
       }
       

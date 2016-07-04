@@ -22,7 +22,7 @@ if(!$_SESSION["login"] && $_GET["debug"] != "true")
 			var userName = $('#userName').val();
 			var passWord = $('#passWord').val();
 
-			$.post("indexProc.php",{'SetOrGet': 1, 'foreignServiceName' : name, 'foreignServiceUserName' : userName, 'foreignServicePassWord' : passWord}, function (data, status){alert("result :" +data);});
+			$.post("indexProc.php",{'SetOrGet': 1, 'foreignServiceName' : name, 'foreignServiceUserName' : userName, 'foreignServicePassWord' : passWord}, function (data, status){if(data != "") alert("something went wrong :" +data);});
 			
 		}
 

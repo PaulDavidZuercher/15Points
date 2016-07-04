@@ -44,7 +44,6 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="login.php">Login</a></li>
                         <li><a class="active" href="register.php">Register</a></li>
-                        <li><a class="right" href="logout.php">Logout</a></li>
                 </ul>
                 
                 <div class="banner">
