@@ -39,7 +39,7 @@
 				
 				$daysdiff = floor(abs(strtotime($row["creationTimeStamp"]) - strtotime(date("Y-m-d H:i:s")))/60/60/24);
 				if($daysdiff > 365)
-					echo("<script>alert(\"Das Passwort für {$row["foreignServiceName"]} ist älter als ein jahr); \")</script>")
+					echo("<script>alert(\"Das Passwort für {$row["foreignServiceName"]} ist älter als ein jahr); \")</script>");
 				echo ("<td>" . $daysdiff. "Tage alt" . "</td>");
 				echo ("</tr>"); 
 			}
